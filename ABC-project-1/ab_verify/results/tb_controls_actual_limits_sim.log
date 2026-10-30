@@ -1,0 +1,8 @@
+PASS default timer switch=1110 period=50000000 clocks @50MHz
+PASS default timer switch=1101 period=150000000 clocks @50MHz
+PASS default timer switch=1011 period=250000000 clocks @50MHz
+PASS default timer switch=0111 period=400000000 clocks @50MHz
+PASS default timer switch=0000 period=50000000 clocks @50MHz
+PASS default timer switch=0101 period=150000000 clocks @50MHz
+PASS default timer switch=0011 period=250000000 clocks @50MHz
+PASS actual default limits: SW1/2/3/4=1/3/5/8s, exact boundaries, priority, manual mode, all-preload wait; fade excluded from interval, full hold starts after commit

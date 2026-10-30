@@ -1,0 +1,115 @@
+//=============================================================================
+// afifo_24x1024.v  (文件名仍为 afifo_24x256.v, 深度已加深到 1024)
+//   用途: SDRAM 域(150MHz) -> 像素域(40MHz) 的跨时钟域数据缓冲
+//
+//   为什么加深: FIFO 越深, 越能吸收 SDRAM 读回数据的"短暂断流"
+//   (刷新、换行换 bank 造成的间隙)。256 深只能顶 6.4us, 1024 深能顶 25us。
+//
+//   实现(经典 Cummings 异步 FIFO 写法):
+//     1) 格雷码读写指针 + 两级触发器同步
+//     2) 满/空标志寄存器输出(避免组合环)
+//     3) wr_level 输出: 写域水位(同步读指针格雷转二进制后与写指针相减),
+//        供读通道做"提前量"流控, 保证 FIFO 永不写满、永不丢字
+//=============================================================================
+module afifo_24x1024 (
+    input  wire        wr_clk,
+    input  wire        wr_rst,      // 高有效
+    input  wire        wr_en,
+    input  wire [23:0] din,
+    output reg         full,
+
+    input  wire        rd_clk,
+    input  wire        rd_rst,      // 高有效
+    input  wire        rd_en,
+    output reg  [23:0] dout,
+    output reg         empty,
+    output reg  [10:0] wr_level    // 写域看到的当前FIFO字数(水位, 深度1024)
+);
+    localparam AW = 10;             // 2^10 = 1024 深(已验证时序)
+    localparam DW = 24;
+
+    reg [DW-1:0] mem [0:(1<<AW)-1];
+
+    reg [AW:0] wbin;
+    reg [AW:0] wgray;
+    reg [AW:0] rbin;
+    reg [AW:0] rgray;
+
+    // ---------------- 写侧 ----------------
+    wire [AW:0] wbin_nxt  = wbin + ((wr_en && !full) ? 1'b1 : 1'b0);
+    wire [AW:0] wgray_nxt = (wbin_nxt >> 1) ^ wbin_nxt;
+
+    reg [AW:0] rgray_w1, rgray_w2;
+    always @(posedge wr_clk or posedge wr_rst) begin
+        if (wr_rst) begin rgray_w1 <= 0; rgray_w2 <= 0; end
+        else        begin rgray_w1 <= rgray; rgray_w2 <= rgray_w1; end
+    end
+
+    wire full_val = (wgray_nxt == {~rgray_w2[AW:AW-1], rgray_w2[AW-2:0]});
+
+    always @(posedge wr_clk or posedge wr_rst) begin
+        if (wr_rst) begin
+            wbin  <= 0;
+            wgray <= 0;
+            full  <= 1'b0;
+        end
+        else begin
+            wbin  <= wbin_nxt;
+            wgray <= wgray_nxt;
+            full  <= full_val;
+        end
+    end
+
+    always @(posedge wr_clk) begin
+        if (wr_en && !full) mem[wbin[AW-1:0]] <= din;
+    end
+
+    // ---------------- 读侧 ----------------
+    wire [AW:0] rbin_nxt  = rbin + ((rd_en && !empty) ? 1'b1 : 1'b0);
+    wire [AW:0] rgray_nxt = (rbin_nxt >> 1) ^ rbin_nxt;
+
+    reg [AW:0] wgray_r1, wgray_r2;
+    always @(posedge rd_clk or posedge rd_rst) begin
+        if (rd_rst) begin wgray_r1 <= 0; wgray_r2 <= 0; end
+        else        begin wgray_r1 <= wgray; wgray_r2 <= wgray_r1; end
+    end
+
+    wire empty_val = (rgray_nxt == wgray_r2);
+
+    always @(posedge rd_clk or posedge rd_rst) begin
+        if (rd_rst) begin
+            rbin  <= 0;
+            rgray <= 0;
+            empty <= 1'b1;
+        end
+        else begin
+            rbin  <= rbin_nxt;
+            rgray <= rgray_nxt;
+            empty <= empty_val;
+        end
+    end
+
+    // Synchronous look-ahead preserves FWFT behaviour: on the consuming
+    // (odd pixel) edge, prefetch the next word for the following even pixel.
+    // While empty, the two pointer synchronizers allow this prefetch to settle
+    // before empty deasserts. Both memory ports can now map to block RAM.
+    always @(posedge rd_clk) dout<=mem[rbin_nxt[AW-1:0]];
+
+    // ---- 写域水位: 把同步过来的读指针格雷码转回二进制, 用写指针减读指针 ----
+    integer k;
+    reg [AW:0] rbin_w2;
+    always @(*) begin
+        rbin_w2[AW] = rgray_w2[AW];
+        for (k = AW-1; k >= 0; k = k-1)
+            rbin_w2[k] = rbin_w2[k+1] ^ rgray_w2[k];
+    end
+    // Registered water level breaks Gray-decode/subtract/control timing chains.
+    // The half-full threshold leaves >500 words for this one-cycle latency.
+    always @(posedge wr_clk or posedge wr_rst) begin
+        if(wr_rst) wr_level<=0;
+        else wr_level<=wbin-rbin_w2;
+    end
+
+endmodule
+
+

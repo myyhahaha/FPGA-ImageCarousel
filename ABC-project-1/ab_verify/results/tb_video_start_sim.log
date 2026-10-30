@@ -1,0 +1,1 @@
+PASS video start: 3097 checks, 19 async readiness phases; wait for synchronized complete image, frame-boundary release, sticky running across later loading, reset

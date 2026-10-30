@@ -1,0 +1,1 @@
+PASS PCM FIFO: 20000 exact samples, 4096-depth full hold, asynchronous clocks, random backpressure, wrap and empty/prefill levels

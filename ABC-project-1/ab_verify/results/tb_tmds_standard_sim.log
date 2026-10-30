@@ -1,0 +1,1 @@
+PASS standard TMDS: 198695 sampled cycles; all 256 bytes, all 65536 ordered transitions, long constant runs, random data, four controls, reset recovery; max running disparity=8

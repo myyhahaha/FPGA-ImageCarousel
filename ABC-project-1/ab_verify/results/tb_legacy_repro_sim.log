@@ -1,0 +1,1 @@
+PASS legacy reproduction: same RGB444 input, old nonstandard code words=591; max accumulated disparity old=106 corrected=8

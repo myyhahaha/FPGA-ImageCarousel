@@ -1,0 +1,1 @@
+PASS audio waveform: 4480 exact snapshot columns; PCM min/max including -32768, ring wrap, immutable visible frames, deferred write during copy and reset clear

@@ -1,0 +1,4 @@
+SDRAM mode: CAS=0 BL=1 single_write=0 mode=000 at                18000
+SDRAM mode: CAS=3 BL=4 single_write=0 mode=032 at              1478000
+REFRESH commands=168 max gap=9080 ns tAC=4.5 skew=0.0
+PASS pin transactions: real TD controller, 4096 blended output words + 1024 written image pairs, 64-word packets, dual-bank/row addresses, refresh/arbitration/delay margins

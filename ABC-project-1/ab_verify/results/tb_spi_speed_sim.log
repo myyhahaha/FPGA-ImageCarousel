@@ -1,0 +1,2 @@
+PASS SPI master timing: divider6, 8 sys clocks/half-cycle = 3.125MHz, 512 bytes in 71168 sys clocks including handshake
+ESTIMATE only: eight BMP payloads at this master handshake rate = 20.497585 seconds; excludes SD init/commands/token/FAT/SDRAM

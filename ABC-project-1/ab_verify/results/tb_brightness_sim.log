@@ -1,0 +1,1 @@
+PASS brightness: debounce/held/simultaneous keys, preload ignored, saturation/reset, frame-atomic application; 36864 RGB444 x level vectors, exact default passthrough and black preservation

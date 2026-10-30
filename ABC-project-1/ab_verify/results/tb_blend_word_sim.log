@@ -1,0 +1,1 @@
+PASS blend: all 33 weights x 16 x 16 channel values, 8448 packed words, six lanes, rounding/endpoints/throughput

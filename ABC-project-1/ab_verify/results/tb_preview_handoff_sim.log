@@ -1,0 +1,2 @@
+PASS mapped preview handoff boot=0: 400-cycle loads, independent 50/49MHz clocks and two-stage CDC, real 32-frame fades 1..8..1, return-to-slot0 ACK before unlock, manual/reverse/automatic work
+PASS mapped preview handoff boot=1: 24000-cycle loads, independent 50/49MHz clocks and two-stage CDC, real 32-frame fades 1..8..1, return-to-slot0 ACK before unlock, manual/reverse/automatic work

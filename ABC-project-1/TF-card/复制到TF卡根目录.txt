@@ -1,0 +1,2 @@
+﻿把 MUSIC.WAV 复制到原来 FAT32 TF 卡的根目录，与原来的 IMAGE1.BMP～IMAGE7.BMP 放在同一级。保持原图不变。
+歌曲从 HDMI 播放，左右声道为同一份 48 kHz / 16-bit PCM 单声道采样，整首循环。

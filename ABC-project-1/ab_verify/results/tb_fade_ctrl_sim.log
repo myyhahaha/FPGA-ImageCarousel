@@ -1,0 +1,1 @@
+PASS fade control: startup, 32-frame fade, reverse fade, frame-constant alpha, latched target, delayed cache release

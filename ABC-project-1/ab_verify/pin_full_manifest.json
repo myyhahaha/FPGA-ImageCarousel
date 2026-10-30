@@ -1,0 +1,24 @@
+[
+  [
+    "tb_pin_fullframe",
+    [
+      "rtl/abc_sd_sector_arbiter.v",
+      "rtl/abc_wav_find.v",
+      "rtl/abc_wav_stream.v",
+      "rtl/abc_sd_media.v",
+      "RTL_1/abc_audio/abc_pcm_fifo.v",
+      "RTL_1/abc_audio/abc_pcm_playback.v",
+      "RTL_1/abc_audio/abc_audio_waveform.v",
+      "ab_verify/sdr_map.v",
+      "ab_verify/td_video_cells.v",
+      "ab_verify/vendor_al_map_lut.v",
+      "ab_verify/video_adder.v",
+      "ab_verify/sdram_pin_model.sv",
+      "RTL_1/a_core/frame_read.v",
+      "RTL_1/bridge/ab_bmp_sdram_writer.v",
+      "RTL_1/bridge/abc_hdmi_top.v",
+      "ab_verify/tb_pin_fullframe.sv"
+    ],
+    true
+  ]
+]

@@ -1,0 +1,31 @@
+[
+  [
+    "tb_continuous_real",
+    [
+      "rtl/abc_sd_sector_arbiter.v",
+      "rtl/abc_wav_find.v",
+      "rtl/abc_wav_stream.v",
+      "rtl/abc_sd_media.v",
+      "RTL_1/abc_audio/abc_pcm_fifo.v",
+      "RTL_1/abc_audio/abc_pcm_playback.v",
+      "RTL_1/abc_audio/abc_audio_waveform.v",
+      "RTL_1/a_core/ab_osd_overlay.v",
+      "RTL_1/a_core/ab_osd_font_rom.v",
+      "RTL_1/bridge/abc_hdmi_top.v",
+      "RTL_1/bridge/ab_bmp_sdram_writer.v",
+      "RTL_1/a_core/frame_read.v",
+      "RTL_1/a_core/afifo_24x256.v",
+      "RTL_1/a_core/vga_disp.v",
+      "RTL_1/a_core/abc_brightness.v",
+      "RTL_1/a_core/hdmi_top.v",
+      "rtl/sd_bmp_stream_top.v",
+      "rtl/fat32_bmp_reader.v",
+      "rtl/bmp_pixel_stream.v",
+      "rtl/pixel_fifo_bridge.v",
+      "ab_verify/sim_models.v",
+      "ab_verify/sd_card_model.v",
+      "ab_verify/tb_continuous_real.v"
+    ],
+    true
+  ]
+]

@@ -1,0 +1,5 @@
+PASS shared TF bandwidth: 1 s of 48 kHz exact music, 48000 PCM frames, 90606 BMP pixels concurrently; conservative 144 sys clocks/byte, lowest FIFO 2930 samples, zero underruns
+- ab_verify\abc_tb_media_bandwidth.sv:26: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.49
+- Verilator: $finish at 1s; walltime 24.311 s; speed 46.933 ms/s
+- Verilator: cpu 23.438 s on 1 threads; allocated 27 MB

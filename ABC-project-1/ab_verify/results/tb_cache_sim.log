@@ -1,0 +1,1 @@
+PASS eight-image cache: 7,680,000 bytes bounded; early first frame; ordered 1..8..1 ready-driven preview; locked input; failed-file holds last image; cold reset; all slots retained; no warm TF rereads; 85 ordered rapid keys, FIFO wrap/full; auto; incomplete/failed-load protection and retry; loads=21 commits=145

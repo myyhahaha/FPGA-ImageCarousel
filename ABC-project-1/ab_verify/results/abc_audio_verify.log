@@ -1,0 +1,4 @@
+PASS PCM FIFO: 20000 exact samples, 4096-depth full hold, asynchronous clocks, random backpressure, wrap and empty/prefill levels
+PASS audio waveform: 4480 exact snapshot columns; PCM min/max including -32768, ring wrap, immutable visible frames, deferred write during copy and reset clear
+PASS AXIS queue: 44689 ordered 26-bit pixels under ready stalls, wrap/full/empty, single-item bypass, overflow reporting
+ALL REQUESTED AUDIO TESTS PASS.

@@ -1,0 +1,1031 @@
+============================================================
+   Tang Dynasty, V6.2.168116
+   Copyright (c) 2012-2025 Anlogic Inc.
+   Executable = C:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/bin/run.exe
+   Built at =   16:32:07 Jun 12 2025
+   Run by =     m_yy
+   Run Date =   Fri Oct 30 16:37:18 2026
+
+   Run on =     LAPTOP-MUATQ0HL
+============================================================
+RUN-1002 : start command "import_device eagle_s20.db -package EG4S20BG256"
+RUN-1001 : Using default speed grade: NA
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/S11  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicate  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicate  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+RUN-1002 : start command "open_project ABC-project-1.prj"
+RUN-1002 : start command "commit_param -step design"
+RUN-1001 : Print Global Property
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   Parameters   |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   enable_seed  |    off     |       off        |        
+RUN-1001 :     message    |  standard  |     standard     |        
+RUN-1001 :   qor_monitor  |     on     |        on        |        
+RUN-1001 :   syn_ip_flow  |    off     |       off        |        
+RUN-1001 :     thread     |    auto    |       auto       |        
+RUN-1001 : --------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :       Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :   default_reg_initial  |    auto    |       auto       |        
+RUN-1001 :    hdl_warning_level   |   normal   |      normal      |        
+RUN-1001 : ----------------------------------------------------------------
+HDL-1007 : analyze verilog file ../../RTL_1/a_core/global_def.v
+HDL-1007 : analyze verilog file ../../RTL_1/a_core/ab_osd_font_rom.v
+HDL-1007 : analyze verilog file ../../RTL_1/a_core/ab_osd_overlay.v
+HDL-1007 : analyze verilog file ../../rtl/fat32_bmp_reader.v
+HDL-5373 WARNING: identifier 'bpb_root_cluster' is used before its declaration in ../../rtl/fat32_bmp_reader.v(38)
+HDL-1007 : analyze verilog file ../../rtl/sd_card_cmd.v
+HDL-1007 : analyze verilog file ../../rtl/sd_card_sec_read_write.v
+HDL-1007 : analyze verilog file ../../rtl/sd_card_top.v
+HDL-1007 : analyze verilog file ../../rtl/spi_master.v
+HDL-1007 : analyze verilog file ../../rtl/bmp_pixel_stream.v
+HDL-1007 : analyze verilog file ../../rtl/pixel_fifo_bridge.v
+HDL-1007 : analyze verilog file ../../rtl/sd_bmp_stream_top.v
+HDL-1007 : analyze verilog file ../../RTL_1/a_core/afifo_24x256.v
+HDL-1007 : analyze verilog file ../../RTL_1/a_core/frame_read.v
+HDL-1007 : analyze verilog file ../../RTL_1/a_core/hdmi_top.v
+HDL-1007 : analyze verilog file ../../RTL_1/a_core/vga_disp.v
+HDL-1007 : analyze verilog file ../../RTL_1/bridge/ab_bmp_sdram_writer.v
+HDL-1007 : analyze verilog file ../../RTL_1/bridge/abc_hdmi_top.v
+HDL-1007 : analyze verilog file ../../RTL_1/enc_file/sdr_as_ram.enc.v
+Copyright (c) 1998-2019 The OpenSSL Project.  All rights reserved.
+This product includes software developed by the OpenSSL Project
+for use in the OpenSSL Toolkit (http://www.openssl.org/)
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+All rights reserved.
+This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)
+HDL-1007 : back to file '../../RTL_1/enc_file/sdr_as_ram.enc.v' in ../../RTL_1/enc_file/sdr_as_ram.enc.v(45)
+HDL-1007 : analyze verilog file ../../RTL_1/enc_file/sdr_init_ref.enc.v
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in ../../RTL_1/enc_file/sdr_init_ref.enc.v(57)
+HDL-1007 : back to file '../../RTL_1/enc_file/sdr_init_ref.enc.v' in ../../RTL_1/enc_file/sdr_init_ref.enc.v(148)
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in ../../RTL_1/enc_file/sdr_init_ref.enc.v(47)
+HDL-1007 : analyze verilog file ../../RTL_1/enc_file/sdr_wrrd.enc.v
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in ../../RTL_1/enc_file/sdr_wrrd.enc.v(283)
+HDL-1007 : back to file '../../RTL_1/enc_file/sdr_wrrd.enc.v' in ../../RTL_1/enc_file/sdr_wrrd.enc.v(19)
+HDL-1007 : analyze verilog file ../../RTL_1/ip/clk_sdr.v
+HDL-1007 : undeclared symbol 'open', assumed default net type 'wire' in ../../RTL_1/ip/clk_sdr.v(60)
+HDL-1007 : analyze verilog file ../../RTL_1/ip/clk_wize.v
+HDL-1007 : undeclared symbol 'open', assumed default net type 'wire' in ../../RTL_1/ip/clk_wize.v(72)
+HDL-1007 : analyze verilog file ../../rtl/abc_sd_sector_arbiter.v
+HDL-1007 : analyze verilog file ../../rtl/abc_wav_find.v
+HDL-1007 : analyze verilog file ../../rtl/abc_wav_stream.v
+HDL-1007 : analyze verilog file ../../rtl/abc_sd_media.v
+HDL-1007 : analyze verilog file ../../RTL_1/abc_audio/abc_pcm_fifo.v
+HDL-1007 : analyze verilog file ../../RTL_1/abc_audio/abc_pcm_playback.v
+HDL-1007 : analyze verilog file ../../RTL_1/abc_audio/abc_audio_waveform.v
+HDL-1007 : analyze verilog file ../../RTL_1/abc_audio/abc_video_axis_fifo.v
+HDL-1007 : analyze verilog file ../../RTL_1/abc_audio/abc_hdmi_audio_tx.v
+HDL-1007 : analyze verilog file ../../RTL_1/abc_audio/abc_acr_calc.v
+HDL-1007 : analyze verilog file ../../RTL_1/abc_audio/abc_video_rgb_to_axis.v
+HDL-1007 : analyze verilog file ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(2614)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(2716)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(2724)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(4936)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(5989)
+HDL-1007 : back to file '../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v' in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(77)
+HDL-1007 : analyze verilog file ../../RTL_1/abc_hdmi14b/abc_hdmi_phy_wrapper.v
+HDL-1007 : analyze verilog file ../../RTL_1/abc_hdmi14b/abc_lane_lvds_10_1.v
+HDL-1007 : analyze verilog file ../../RTL_1/a_core/abc_brightness.v
+PRJ-1401 : Successfully analyzed 37 source files.
+RUN-1002 : start command "commit_param -step design"
+RUN-1001 : Print Global Property
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   Parameters   |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   enable_seed  |    off     |       off        |        
+RUN-1001 :     message    |  standard  |     standard     |        
+RUN-1001 :   qor_monitor  |     on     |        on        |        
+RUN-1001 :   syn_ip_flow  |    off     |       off        |        
+RUN-1001 :     thread     |    auto    |       auto       |        
+RUN-1001 : --------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :       Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :   default_reg_initial  |    auto    |       auto       |        
+RUN-1001 :    hdl_warning_level   |   normal   |      normal      |        
+RUN-1001 : ----------------------------------------------------------------
+RUN-1002 : start command "elaborate -top abc_hdmi_top"
+HDL-1007 : elaborate module abc_hdmi_top in ../../RTL_1/bridge/abc_hdmi_top.v(3)
+HDL-1007 : elaborate module clk_wize in ../../RTL_1/ip/clk_wize.v(25)
+HDL-1007 : elaborate module EG_LOGIC_BUFG in C:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\arch/eagle_macro.v(5)
+HDL-1007 : elaborate module EG_PHY_PLL(FIN="50.000000",FBCLK_DIV=4,CLKC0_DIV=5,CLKC1_DIV=25,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=4,CLKC1_CPHASE=24,GMC_GAIN=4,ICP_CURRENT=13,KVCO=4,LPF_CAPACITOR=1,LPF_RESISTOR=4,SYNC_ENABLE="DISABLE") in C:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\arch/eagle_macro.v(889)
+HDL-1007 : elaborate module clk_sdr in ../../RTL_1/ip/clk_sdr.v(5)
+HDL-1007 : elaborate module EG_PHY_PLL(FIN="50.000000",CLKC0_DIV=20,CLKC1_DIV=20,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=19,CLKC1_CPHASE=7,GMC_GAIN=4,ICP_CURRENT=13,KVCO=4,LPF_CAPACITOR=1,LPF_RESISTOR=4,SYNC_ENABLE="DISABLE") in C:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\arch/eagle_macro.v(889)
+HDL-1007 : elaborate module ab_sdram_refresh_ctrl in ../../RTL_1/bridge/abc_hdmi_top.v(404)
+HDL-1007 : elaborate module sdr_as_ram(self_refresh_open=1'b1) in ../../RTL_1/enc_file/sdr_as_ram.enc.v(12)
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in ../../RTL_1/enc_file/sdr_init_ref.enc.v(47)
+HDL-1007 : elaborate module sdr_init_ref(self_refresh_open=1'b1) in ../../RTL_1/enc_file/sdr_init_ref.enc.v(12)
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in ../../RTL_1/enc_file/sdr_wrrd.enc.v(283)
+HDL-1007 : elaborate module ** in ../../RTL_1/enc_file/sdr_wrrd.enc.v(3)
+HDL-5317 WARNING: input port '**' is not connected on this instance in ../../RTL_1/enc_file/sdr_as_ram.enc.v(17)
+HDL-1007 : elaborate module EG_PHY_SDRAM_2M_32 in C:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\arch/eagle_macro.v(683)
+HDL-1007 : elaborate module img_switch_ctrl in ../../RTL_1/bridge/abc_hdmi_top.v(328)
+HDL-1007 : elaborate module ab_image_cache_ctrl in ../../RTL_1/bridge/abc_hdmi_top.v(211)
+HDL-1007 : elaborate module ab_reload_cdc in ../../RTL_1/bridge/abc_hdmi_top.v(419)
+HDL-1007 : elaborate module abc_sd_media in ../../rtl/abc_sd_media.v(2)
+HDL-1007 : elaborate module sd_card_top(SPI_HIGH_SPEED_DIV=6) in ../../rtl/sd_card_top.v(1)
+HDL-1007 : elaborate module sd_card_sec_read_write(SPI_HIGH_SPEED_DIV=6) in ../../rtl/sd_card_sec_read_write.v(1)
+HDL-1007 : elaborate module sd_card_cmd in ../../rtl/sd_card_cmd.v(1)
+HDL-1007 : elaborate module spi_master in ../../rtl/spi_master.v(1)
+HDL-1007 : elaborate module abc_sd_sector_arbiter in ../../rtl/abc_sd_sector_arbiter.v(2)
+HDL-1007 : elaborate module sd_bmp_stream_top(EXTERNAL_SD=1) in ../../rtl/sd_bmp_stream_top.v(4)
+HDL-1007 : elaborate module fat32_bmp_reader(TARGET_NAME="IMAGE7  BMP") in ../../rtl/fat32_bmp_reader.v(6)
+HDL-1007 : elaborate module bmp_pixel_stream in ../../rtl/bmp_pixel_stream.v(4)
+HDL-1007 : extracting RAM for identifier 'mem' in ../../rtl/bmp_pixel_stream.v(21)
+HDL-1007 : elaborate module pixel_fifo_bridge in ../../rtl/pixel_fifo_bridge.v(3)
+HDL-1007 : elaborate module abc_wav_find in ../../rtl/abc_wav_find.v(3)
+HDL-1007 : elaborate module abc_wav_stream in ../../rtl/abc_wav_stream.v(3)
+HDL-1007 : extracting RAM for identifier 'mem' in ../../rtl/abc_wav_stream.v(10)
+HDL-1007 : elaborate module abc_pcm_fifo in ../../RTL_1/abc_audio/abc_pcm_fifo.v(2)
+HDL-1007 : extracting RAM for identifier 'mem' in ../../RTL_1/abc_audio/abc_pcm_fifo.v(20)
+HDL-1007 : elaborate module ab_bmp_sdram_writer in ../../RTL_1/bridge/ab_bmp_sdram_writer.v(5)
+HDL-1007 : extracting RAM for identifier 'buf0' in ../../RTL_1/bridge/ab_bmp_sdram_writer.v(24)
+HDL-1007 : extracting RAM for identifier 'buf1' in ../../RTL_1/bridge/ab_bmp_sdram_writer.v(24)
+HDL-1007 : extracting RAM for identifier 'buf2' in ../../RTL_1/bridge/ab_bmp_sdram_writer.v(24)
+HDL-1007 : extracting RAM for identifier 'buf3' in ../../RTL_1/bridge/ab_bmp_sdram_writer.v(24)
+HDL-1007 : extracting RAM for identifier 'abuf' in ../../RTL_1/bridge/ab_bmp_sdram_writer.v(25)
+HDL-1007 : elaborate module ab_fade_ctrl in ../../RTL_1/bridge/abc_hdmi_top.v(435)
+HDL-1007 : elaborate module frame_read(TOTAL=240000) in ../../RTL_1/a_core/frame_read.v(5)
+HDL-1007 : extracting RAM for identifier 'old_packet' in ../../RTL_1/a_core/frame_read.v(26)
+HDL-1007 : elaborate module ab_blend_word in ../../RTL_1/a_core/frame_read.v(86)
+HDL-1007 : extracting RAM for identifier 'old_product' in ../../RTL_1/a_core/frame_read.v(89)
+HDL-1007 : extracting RAM for identifier 'new_product' in ../../RTL_1/a_core/frame_read.v(89)
+HDL-1007 : elaborate module afifo_24x1024 in ../../RTL_1/a_core/afifo_24x256.v(14)
+HDL-1007 : extracting RAM for identifier 'mem' in ../../RTL_1/a_core/afifo_24x256.v(31)
+HDL-1007 : elaborate module hdmi_top in ../../RTL_1/a_core/hdmi_top.v(8)
+HDL-1007 : elaborate module vga_disp in ../../RTL_1/a_core/vga_disp.v(19)
+HDL-1007 : elaborate module ab_video_start in ../../RTL_1/a_core/ab_osd_overlay.v(48)
+HDL-1007 : elaborate module abc_brightness_ctrl in ../../RTL_1/a_core/abc_brightness.v(4)
+HDL-1007 : elaborate module abc_brightness_rgb in ../../RTL_1/a_core/abc_brightness.v(47)
+HDL-1007 : elaborate module abc_pcm_playback in ../../RTL_1/abc_audio/abc_pcm_playback.v(3)
+HDL-1007 : elaborate module ab_osd_overlay in ../../RTL_1/a_core/ab_osd_overlay.v(215)
+HDL-1007 : elaborate module abc_audio_waveform in ../../RTL_1/abc_audio/abc_audio_waveform.v(4)
+HDL-1007 : extracting RAM for identifier 'history' in ../../RTL_1/abc_audio/abc_audio_waveform.v(8)
+HDL-1007 : extracting RAM for identifier 'snapshot' in ../../RTL_1/abc_audio/abc_audio_waveform.v(8)
+HDL-1007 : elaborate module ab_osd_clock in ../../RTL_1/a_core/ab_osd_overlay.v(3)
+HDL-1007 : elaborate module ab_osd_engine in ../../RTL_1/a_core/ab_osd_overlay.v(62)
+HDL-1007 : elaborate module ab_osd_font_zh in ../../RTL_1/a_core/ab_osd_font_rom.v(3)
+HDL-1007 : extracting RAM for identifier 'rom' in ../../RTL_1/a_core/ab_osd_font_rom.v(4)
+HDL-5314 WARNING: net 'rom' does not have a driver in ../../RTL_1/a_core/ab_osd_font_rom.v(4)
+HDL-1007 : elaborate module ab_osd_font_digits in ../../RTL_1/a_core/ab_osd_font_rom.v(265)
+HDL-1007 : extracting RAM for identifier 'rom' in ../../RTL_1/a_core/ab_osd_font_rom.v(266)
+HDL-5314 WARNING: net 'rom' does not have a driver in ../../RTL_1/a_core/ab_osd_font_rom.v(266)
+HDL-1007 : elaborate module abc_hdmi_audio_tx in ../../RTL_1/abc_audio/abc_hdmi_audio_tx.v(3)
+HDL-1007 : elaborate module abc_video_rgb_to_axis(HACTIVE=800) in ../../RTL_1/abc_audio/abc_video_rgb_to_axis.v(14)
+HDL-1007 : elaborate module abc_video_axis_fifo in ../../RTL_1/abc_audio/abc_video_axis_fifo.v(3)
+HDL-1007 : extracting RAM for identifier 'mem' in ../../RTL_1/abc_audio/abc_video_axis_fifo.v(7)
+HDL-1007 : elaborate module abc_acr_calc in ../../RTL_1/abc_audio/abc_acr_calc.v(15)
+HDL-1007 : elaborate module hdmi_1_4b_transmitter_core_wrapper(HTOTAL=1056,HSA=128,HFP=40,HBP=88,HACTIVE=800,VTOTAL=628,VSA=4,VFP=1,VBP=23,VACTIVE=600,VIDEO_TPG="Disable",VIDEO_VIC=0,IIC_SCL_DIV=250) in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(2)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(91)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(137)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(208)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(285)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(396)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(803)
+HDL-1007 : elaborate module EG_LOGIC_RAMFIFO(DATA_WIDTH=11,ADDR_WIDTH=10,IMPLEMENT="9K") in C:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\arch/eagle_macro.v(750)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(1338)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(1480)
+HDL-1007 : elaborate module EG_LOGIC_RAMFIFO(DATA_WIDTH=9,ADDR_WIDTH=10,IMPLEMENT="9K") in C:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\arch/eagle_macro.v(750)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(2012)
+HDL-1007 : port '**' remains unconnected for this instance in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(2733)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(2403)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(2842)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(2939)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(3138)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(3177)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(3511)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(3666)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(3730)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(3860)
+HDL-5007 WARNING: actual bit length ** differs from formal bit length *** for port '**' in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(3307)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(3949)
+HDL-5007 WARNING: actual bit length ** differs from formal bit length *** for port '**' in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(3318)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(4034)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(4127)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(4285)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(4586)
+HDL-1007 : elaborate module EG_LOGIC_RAMFIFO(DATA_WIDTH=96,ADDR_WIDTH=10,IMPLEMENT="9K") in C:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\arch/eagle_macro.v(750)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(5534)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(5657)
+HDL-1007 : elaborate module EG_LOGIC_RAMFIFO(DATA_WIDTH=24,ADDR_WIDTH=10,IMPLEMENT="9K") in C:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\arch/eagle_macro.v(750)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(6273)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(6501)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(6575)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(6924)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(6994)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(6994)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(6994)
+HDL-1007 : elaborate module abc_hdmi_phy_wrapper in ../../RTL_1/abc_hdmi14b/abc_hdmi_phy_wrapper.v(3)
+HDL-1007 : elaborate module abc_lane_lvds_10_1 in ../../RTL_1/abc_hdmi14b/abc_lane_lvds_10_1.v(4)
+HDL-1007 : elaborate module EG_LOGIC_ODDR in C:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\arch/eagle_macro.v(66)
+HDL-5001 WARNING: Contains anonymous inst(s) and/or net(s) that have not been renamed
+HDL-1200 : Current top model is abc_hdmi_top
+HDL-1100 : Inferred 17 RAMs.
+RUN-1002 : start command "read_adc ../../abc_hdmi_merged.adc"
+RUN-1002 : start command "set_pin_assignment  HDMI_CLK_P   LOCATION = C3; IOSTANDARD = LVDS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  HDMI_CLK_P1   LOCATION = K1; IOSTANDARD = LVDS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  HDMI_D0_P   LOCATION = G5; IOSTANDARD = LVDS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  HDMI_D0_P1   LOCATION = F5; IOSTANDARD = LVDS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  HDMI_D1_P   LOCATION = F1; IOSTANDARD = LVDS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  HDMI_D1_P1   LOCATION = E3; IOSTANDARD = LVDS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  HDMI_D2_P   LOCATION = E1; IOSTANDARD = LVDS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  HDMI_D2_P1   LOCATION = B3; IOSTANDARD = LVDS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  led[0]   LOCATION = A4; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  led[1]   LOCATION = A3; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  led[2]   LOCATION = C10; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  led[3]   LOCATION = B12; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  VGA_B[0]   LOCATION = virtualIO; "
+RUN-1002 : start command "set_pin_assignment  VGA_B[1]   LOCATION = virtualIO; "
+RUN-1002 : start command "set_pin_assignment  VGA_B[2]   LOCATION = virtualIO; "
+RUN-1002 : start command "set_pin_assignment  VGA_B[3]   LOCATION = virtualIO; "
+RUN-1002 : start command "set_pin_assignment  VGA_B[4]   LOCATION = virtualIO; "
+RUN-1002 : start command "set_pin_assignment  VGA_B[5]   LOCATION = virtualIO; "
+RUN-1002 : start command "set_pin_assignment  VGA_B[6]   LOCATION = virtualIO; "
+RUN-1002 : start command "set_pin_assignment  VGA_B[7]   LOCATION = virtualIO; "
+RUN-1002 : start command "set_pin_assignment  VGA_G[0]   LOCATION = virtualIO; "
+RUN-1002 : start command "set_pin_assignment  VGA_G[1]   LOCATION = virtualIO; "
+RUN-1002 : start command "set_pin_assignment  VGA_G[2]   LOCATION = virtualIO; "
+RUN-1002 : start command "set_pin_assignment  VGA_G[3]   LOCATION = virtualIO; "
+RUN-1002 : start command "set_pin_assignment  VGA_G[4]   LOCATION = virtualIO; "
+RUN-1002 : start command "set_pin_assignment  VGA_G[5]   LOCATION = virtualIO; "
+RUN-1002 : start command "set_pin_assignment  VGA_G[6]   LOCATION = virtualIO; "
+RUN-1002 : start command "set_pin_assignment  VGA_G[7]   LOCATION = virtualIO; "
+RUN-1002 : start command "set_pin_assignment  VGA_HS   LOCATION = virtualIO; "
+RUN-1002 : start command "set_pin_assignment  VGA_R[0]   LOCATION = virtualIO; "
+RUN-1002 : start command "set_pin_assignment  VGA_R[1]   LOCATION = virtualIO; "
+RUN-1002 : start command "set_pin_assignment  VGA_R[2]   LOCATION = virtualIO; "
+RUN-1002 : start command "set_pin_assignment  VGA_R[3]   LOCATION = virtualIO; "
+RUN-1002 : start command "set_pin_assignment  VGA_R[4]   LOCATION = virtualIO; "
+RUN-1002 : start command "set_pin_assignment  VGA_R[5]   LOCATION = virtualIO; "
+RUN-1002 : start command "set_pin_assignment  VGA_R[6]   LOCATION = virtualIO; "
+RUN-1002 : start command "set_pin_assignment  VGA_R[7]   LOCATION = virtualIO; "
+RUN-1002 : start command "set_pin_assignment  VGA_VS   LOCATION = virtualIO; "
+RUN-1002 : start command "set_pin_assignment  sys_clk   LOCATION = R7; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  key_next   LOCATION = A2; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  key_prev   LOCATION = B2; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  key_brighter   LOCATION = B1; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  key_dimmer   LOCATION = C1; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  sw1_n   LOCATION = C8; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  sw2_n   LOCATION = C7; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  sw3_n   LOCATION = C6; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  sw4_n   LOCATION = C5; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  SD_DCLK   LOCATION = A14; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  SD_MISO   LOCATION = B14; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  SD_MOSI   LOCATION = A13; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  SD_nCS   LOCATION = A12; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  HDMI_DDC_SCL   LOCATION = P2; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  HDMI_DDC_SDA   LOCATION = R2; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; "
+RUN-1001 : Starting of IO setups legality check.
+RUN-1001 : Starting of IO vref setups legality check.
+RUN-1002 : start command "read_sdc ../../abc_hdmi.sdc"
+RUN-1002 : start command "export_db ABC-project-1_elaborate.db"
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported packer
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported ATMR Setting
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported ChipWatcher
+RUN-1002 : start command "commit_param -step rtl"
+RUN-1001 : Print Global Property
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   Parameters   |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   enable_seed  |    off     |       off        |        
+RUN-1001 :     message    |  standard  |     standard     |        
+RUN-1001 :   qor_monitor  |     on     |        on        |        
+RUN-1001 :   syn_ip_flow  |    off     |       off        |        
+RUN-1001 :     thread     |    auto    |       auto       |        
+RUN-1001 : --------------------------------------------------------
+RUN-1001 : Print Rtl Property
+RUN-1001 : -------------------------------------------------------------------
+RUN-1001 :         Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : -------------------------------------------------------------------
+RUN-1001 :        fix_undriven       |     0      |        0         |        
+RUN-1001 :   gated_clock_conversion  |    off     |       off        |        
+RUN-1001 :         infer_fsm         |    auto    |       auto       |        
+RUN-1001 :         infer_gsr         |    off     |       off        |        
+RUN-1001 :         infer_rom         |     on     |        on        |        
+RUN-1001 :       keep_hierarchy      |    auto    |       auto       |        
+RUN-1001 :        merge_equal        |     on     |        on        |        
+RUN-1001 :      min_control_set      |     8      |        8         |        
+RUN-1001 :       min_ripple_len      |    auto    |       auto       |        
+RUN-1001 :          seq_syn          |     on     |        on        |        
+RUN-1001 : -------------------------------------------------------------------
+RUN-1002 : start command "insert_debugger"
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file C:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/license/Anlogic.lic
+SYN-1001 : Stage 1 | Optimize RTL
+SYN-1001 : Stage 1.1 | Check Design Sanity
+SYN-1001 : End Stage 1.1 | Check Design Sanity; Time: 0.014297s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (109.3%); Memory(MB): used = 259, reserved = 368, peak = 259;
+
+SYN-1079 : finish stage Check Design Sanity. Total instances: 28654, Total nets: 76316.
+
+SYN-1001 : Stage 1.2 | Initialize Design
+SYN-1001 : End Stage 1.2 | Initialize Design; Time: 2.120456s wall, 2.031250s user + 0.000000s system = 2.031250s CPU (95.8%); Memory(MB): used = 260, reserved = 368, peak = 260;
+
+SYN-1079 : finish stage Initialize Design. Total instances: 6263, Total nets: 50519.
+
+SYN-1001 : Stage 1.3 | Flatten Module
+SYN-1011 : Flatten model abc_hdmi_top
+SYN-1001 : End Stage 1.3 | Flatten Module; Time: 0.496829s wall, 0.484375s user + 0.000000s system = 0.484375s CPU (97.5%); Memory(MB): used = 261, reserved = 368, peak = 261;
+
+SYN-1079 : finish stage Flatten Module. Total instances: 7954, Total nets: 44334.
+
+SYN-1001 : Stage 1.4 | Uniform Instance
+SYN-5013 WARNING: Undriven net: model "abc_hdmi_top" / net "u_sdr_as_ram/u2_wrrd/Sdr_init_ref_ba[1]" in ../../RTL_1/enc_file/sdr_wrrd.enc.v(0)
+		the net's pin: pin "i1[1]" in ../../RTL_1/enc_file/sdr_wrrd.enc.v(0)
+SYN-5013 WARNING: Undriven net: model "abc_hdmi_top" / net "u_sdr_as_ram/u2_wrrd/Sdr_init_ref_ba[0]" in ../../RTL_1/enc_file/sdr_wrrd.enc.v(0)
+		the net's pin: pin "i1[0]" in ../../RTL_1/enc_file/sdr_wrrd.enc.v(0)
+SYN-5025 WARNING: Using 0 for all undriven pins and nets
+SYN-1001 : End Stage 1.4 | Uniform Instance; Time: 0.096988s wall, 0.093750s user + 0.000000s system = 0.093750s CPU (96.7%); Memory(MB): used = 236, reserved = 234, peak = 261;
+
+SYN-1079 : finish stage Uniform Instance. Total instances: 6232, Total nets: 42606.
+
+SYN-1001 : Stage 1.5 | Optimize Design
+SYN-1066 : Inferred FSM for state register 'u_b_stream/sd/sd_card_cmd_m0/state_reg' in module 'abc_hdmi_top'
+--------------------------------------------------
+     Previous Encoding           New Encoding
+--------------------------------------------------
+                 00000     000000000000000001
+                 00010     000000000000000010
+                 00001     000000000000000100
+                 01001     000000000000001000
+                 01010     000000000000010000
+                 01011     000000000000100000
+                 01100     000000000001000000
+                 01101     000000000010000000
+                 01110     000000000100000000
+                 01111     000000001000000000
+                 00110     000000010000000000
+                 00011     000000100000000000
+                 00111     000001000000000000
+                 00100     000010000000000000
+                 01000     000100000000000000
+                 10001     001000000000000000
+                 00101     010000000000000000
+                 10000     100000000000000000
+--------------------------------------------------
+SYN-1067 : encoded FSM with state register 'u_b_stream/sd/sd_card_cmd_m0/state_reg' using encoding 'one_hot' in model 'abc_hdmi_top'
+SYN-1066 : Inferred FSM for state register 'u_b_stream/sd/sd_card_sec_read_write_m0/state_reg' in module 'abc_hdmi_top'
+--------------------------------------------
+     Previous Encoding     New Encoding
+--------------------------------------------
+                 00000       0000000001
+                 00001       0000000010
+                 00010       0000000100
+                 00011       0000001000
+                 00100       0000010000
+                 10010       0000100000
+                 10001       0001000000
+                 00101       0010000000
+                 00110       0100000000
+                 10000       1000000000
+--------------------------------------------
+SYN-1067 : encoded FSM with state register 'u_b_stream/sd/sd_card_sec_read_write_m0/state_reg' using encoding 'one_hot' in model 'abc_hdmi_top'
+SYN-1066 : Inferred FSM for state register 'u_b_stream/sd/spi_master_m0/state_reg' in module 'abc_hdmi_top'
+--------------------------------------------
+     Previous Encoding     New Encoding
+--------------------------------------------
+                   000           000001
+                   010           000010
+                   001           000100
+                   100           001000
+                   011           010000
+                   101           100000
+--------------------------------------------
+SYN-1067 : encoded FSM with state register 'u_b_stream/sd/spi_master_m0/state_reg' using encoding 'one_hot' in model 'abc_hdmi_top'
+SYN-1066 : Inferred FSM for state register 'u_b_stream/u_find/state_reg' in module 'abc_hdmi_top'
+--------------------------------------------
+     Previous Encoding     New Encoding
+--------------------------------------------
+                   000         00000001
+                   001         00000010
+                   010         00000100
+                   011         00001000
+                   100         00010000
+                   101         00100000
+                   110         01000000
+                   111         10000000
+--------------------------------------------
+SYN-1067 : encoded FSM with state register 'u_b_stream/u_find/state_reg' using encoding 'one_hot' in model 'abc_hdmi_top'
+SYN-1066 : Inferred FSM for state register 'u_b_stream/u_images/reader/phase_reg' in module 'abc_hdmi_top'
+--------------------------------------------
+     Previous Encoding     New Encoding
+--------------------------------------------
+                   000            00001
+                   001            00010
+                   010            00100
+                   100            01000
+                   011            10000
+--------------------------------------------
+SYN-1067 : encoded FSM with state register 'u_b_stream/u_images/reader/phase_reg' using encoding 'one_hot' in model 'abc_hdmi_top'
+SYN-1066 : Inferred FSM for state register 'u_b_stream/u_images/reader/state_reg' in module 'abc_hdmi_top'
+--------------------------------------------
+     Previous Encoding     New Encoding
+--------------------------------------------
+                   000           000001
+                   001           000010
+                   010           000100
+                   011           001000
+                   100           010000
+                   101           100000
+--------------------------------------------
+SYN-1067 : encoded FSM with state register 'u_b_stream/u_images/reader/state_reg' using encoding 'one_hot' in model 'abc_hdmi_top'
+SYN-1066 : Inferred FSM for state register 'u_b_stream/u_images/stream/component_reg' in module 'abc_hdmi_top'
+--------------------------------------------
+     Previous Encoding     New Encoding
+--------------------------------------------
+                    00              001
+                    01              010
+                    10              100
+--------------------------------------------
+SYN-1067 : encoded FSM with state register 'u_b_stream/u_images/stream/component_reg' using encoding 'one_hot' in model 'abc_hdmi_top'
+SYN-1066 : Inferred FSM for state register 'u_b_stream/u_images/stream/state_reg' in module 'abc_hdmi_top'
+--------------------------------------------
+     Previous Encoding     New Encoding
+--------------------------------------------
+                  0000       0000000001
+                  0001       0000000010
+                  0010       0000000100
+                  0011       0000001000
+                  0100       0000010000
+                  0101       0000100000
+                  0110       0001000000
+                  0111       0010000000
+                  1001       0100000000
+                  1000       1000000000
+--------------------------------------------
+SYN-1067 : encoded FSM with state register 'u_b_stream/u_images/stream/state_reg' using encoding 'one_hot' in model 'abc_hdmi_top'
+SYN-1066 : Inferred FSM for state register 'u_b_stream/u_music/state_reg' in module 'abc_hdmi_top'
+--------------------------------------------
+     Previous Encoding     New Encoding
+--------------------------------------------
+                  0000        000000001
+                  0001        000000010
+                  0010        000000100
+                  0011        000001000
+                  0100        000010000
+                  0101        000100000
+                  0110        001000000
+                  0111        010000000
+                  1000        100000000
+--------------------------------------------
+SYN-1067 : encoded FSM with state register 'u_b_stream/u_music/state_reg' using encoding 'one_hot' in model 'abc_hdmi_top'
+SYN-1066 : Inferred FSM for state register 'u_cache/load_state_reg' in module 'abc_hdmi_top'
+--------------------------------------------
+     Previous Encoding     New Encoding
+--------------------------------------------
+                    00             0001
+                    01             0010
+                    10             0100
+                    11             1000
+--------------------------------------------
+SYN-1067 : encoded FSM with state register 'u_cache/load_state_reg' using encoding 'one_hot' in model 'abc_hdmi_top'
+SYN-1066 : Inferred FSM for state register 'u_sdr_as_ram/u2_wrrd/state_reg' in module 'abc_hdmi_top'
+--------------------------------------------
+     Previous Encoding     New Encoding
+--------------------------------------------
+                  0000              001
+                  0001              010
+                  0010              100
+--------------------------------------------
+SYN-1067 : encoded FSM with state register 'u_sdr_as_ram/u2_wrrd/state_reg' using encoding 'one_hot' in model 'abc_hdmi_top'
+SYN-1057 : Inferred 11 FSM(s)
+SYN-1001 : Optimize 1 less-than instances
+SYN-1001 : Optimize 5 less-than instances
+SYN-1032 : 40905/537 useful/useless nets, 5919/58 useful/useless insts
+SYN-1001 : Bypass 1 mux instances
+SYN-1021 : Optimized 19 onehot mux instances.
+SYN-1068 : Optimized 7 binary mux instances.
+SYN-1019 : Optimized 1 mux instances.
+SYN-1021 : Optimized 16 onehot mux instances.
+SYN-1021 : Optimized 1 onehot mux instances.
+SYN-1021 : Optimized 5 onehot mux instances.
+SYN-1001 : Optimize 7 less-than instances
+SYN-1016 : Merged 1696 instances.
+SYN-1025 : Merged 55 RAM ports.
+SYN-1026 : Infer Logic BRAM(u_b_stream/u_audio_fifo/ramread0_syn_4)
+	 port mode: single dual port
+	 port a size: 4096 x 16	 write mode: NORMAL
+	 port b size: 4096 x 16	 write mode: READBEFOREWRITE
+SYN-1025 : Merged 2 RAM ports.
+SYN-1027 : Infer Logic DRAM(u_b_stream/u_images/stream/ramread0_syn_4) read 512x8, write 512x8
+SYN-1027 : Infer Logic DRAM(u_b_stream/u_music/ramread0_syn_4) read 512x8, write 512x8
+SYN-1026 : Infer Logic BRAM(u_fifo/ramread0_syn_4)
+	 port mode: single dual port
+	 port a size: 1024 x 24	 write mode: NORMAL
+	 port b size: 1024 x 24	 write mode: READBEFOREWRITE
+SYN-1027 : Infer Logic DRAM(u_hdmi_top/u3_hdmi_tx/u_queue/ramread0_syn_4) read 1024x26, write 1024x26
+SYN-1025 : Merged 1 RAM ports.
+SYN-1026 : Infer Logic BRAM(u_hdmi_top/u_osd/u_wave/ramread0_syn_46)
+	 port mode: single dual port
+	 port a size: 1024 x 10	 write mode: NORMAL
+	 port b size: 1024 x 10	 write mode: READBEFOREWRITE
+SYN-1025 : Merged 1 RAM ports.
+SYN-1026 : Infer Logic BRAM(u_hdmi_top/u_osd/u_wave/ramread1_syn_46)
+	 port mode: single dual port
+	 port a size: 1024 x 10	 write mode: NORMAL
+	 port b size: 1024 x 10	 write mode: READBEFOREWRITE
+SYN-1026 : Infer Logic BRAM(u_read/ramread0_syn_4)
+	 port mode: single dual port
+	 port a size: 512 x 24	 write mode: NORMAL
+	 port b size: 512 x 24	 write mode: READBEFOREWRITE
+SYN-1025 : Merged 8 RAM ports.
+SYN-1025 : Merged 8 RAM ports.
+SYN-1026 : Infer Logic BRAM(u_writer/ramread0_syn_4)
+	 port mode: single dual port
+	 port a size: 128 x 24	 write mode: NORMAL
+	 port b size: 128 x 24	 write mode: READBEFOREWRITE
+SYN-1026 : Infer Logic BRAM(u_writer/ramread1_syn_4)
+	 port mode: single dual port
+	 port a size: 128 x 24	 write mode: NORMAL
+	 port b size: 128 x 24	 write mode: READBEFOREWRITE
+SYN-1026 : Infer Logic BRAM(u_writer/ramread2_syn_4)
+	 port mode: single dual port
+	 port a size: 128 x 24	 write mode: NORMAL
+	 port b size: 128 x 24	 write mode: READBEFOREWRITE
+SYN-1026 : Infer Logic BRAM(u_writer/ramread3_syn_4)
+	 port mode: single dual port
+	 port a size: 128 x 21	 write mode: NORMAL
+	 port b size: 128 x 21	 write mode: READBEFOREWRITE
+SYN-1026 : Infer Logic BRAM(u_writer/ramread4_syn_4)
+	 port mode: single dual port
+	 port a size: 128 x 24	 write mode: NORMAL
+	 port b size: 128 x 24	 write mode: READBEFOREWRITE
+SYN-1023 : Infer 3 Logic DRAMs, 12 Logic BRAMs.
+USR-1002 : Derived clock:  create_generated_clock -name {u_clk_sdr/pll_inst.clkc[0]} -source [get_ports {sys_clk}] -master_clock {sys_clk} -multiply_by 1.0000 -duty_cycle 50.0000 [get_pins {u_clk_sdr/pll_inst.clkc[0]}]
+USR-1002 : Derived clock:  create_generated_clock -name {u_clk_sdr/pll_inst.clkc[1]} -source [get_ports {sys_clk}] -master_clock {sys_clk} -multiply_by 1.0000 -phase 144 -duty_cycle 50.0000 [get_pins {u_clk_sdr/pll_inst.clkc[1]}]
+USR-1002 : Derived clock:  create_generated_clock -name {u_clk_wize/pll_inst.clkc[0]} -source [get_ports {sys_clk}] -master_clock {sys_clk} -multiply_by 4.0000 -duty_cycle 50.0000 [get_pins {u_clk_wize/pll_inst.clkc[0]}]
+USR-1002 : Derived clock:  create_generated_clock -name {u_clk_wize/pll_inst.clkc[1]} -source [get_ports {sys_clk}] -master_clock {sys_clk} -divide_by 1.2500 -duty_cycle 50.0000 [get_pins {u_clk_wize/pll_inst.clkc[1]}]
+SYN-1016 : Merged 2836 instances.
+SYN-1001 : End Stage 1.5 | Optimize Design; Time: 10.187482s wall, 9.828125s user + 0.156250s system = 9.984375s CPU (98.0%); Memory(MB): used = 497, reserved = 485, peak = 497;
+
+SYN-1079 : finish stage Optimize Design. Total instances: 17660, Total nets: 21414.
+
+SYN-1001 : Stage 1.6 | Optimize Iteratively
+SYN-1019 : Optimized 5 mux instances.
+SYN-1021 : Optimized 1461 onehot mux instances.
+SYN-1014 : Optimize round 1
+SYN-1044 : Optimized 120 inv instances.
+SYN-1017 : Remove 47 const input seq instances
+SYN-1018 : Transformed 3 mux instances.
+SYN-1019 : Optimized 34 mux instances.
+SYN-1020 : Optimized 896 distributor mux.
+SYN-1001 : Optimize 77 less-than instances
+SYN-1019 : Optimized 9 mux instances.
+SYN-2595 : bram inst: u_b_stream/u_audio_fifo/ramread0_syn_4 is set to PDPW/SP from DP for resource saving
+SYN-2595 : bram inst: u_fifo/ramread0_syn_4 is set to PDPW/SP from DP for resource saving
+SYN-2595 : bram inst: u_hdmi_top/u_osd/u_wave/ramread0_syn_46 is set to PDPW/SP from DP for resource saving
+SYN-2595 : bram inst: u_hdmi_top/u_osd/u_wave/ramread1_syn_46 is set to PDPW/SP from DP for resource saving
+SYN-2595 : bram inst: u_read/ramread0_syn_4 is set to PDPW/SP from DP for resource saving
+SYN-2595 : bram inst: u_writer/ramread0_syn_4 is set to PDPW/SP from DP for resource saving
+SYN-2595 : bram inst: u_writer/ramread1_syn_4 is set to PDPW/SP from DP for resource saving
+SYN-2595 : bram inst: u_writer/ramread2_syn_4 is set to PDPW/SP from DP for resource saving
+SYN-2595 : bram inst: u_writer/ramread3_syn_4 is set to PDPW/SP from DP for resource saving
+SYN-2595 : bram inst: u_writer/ramread4_syn_4 is set to PDPW/SP from DP for resource saving
+SYN-1016 : Merged 67832 instances.
+SYN-1015 : Optimize round 1, 136469 better
+SYN-1014 : Optimize round 2
+SYN-1044 : Optimized 23 inv instances.
+SYN-1017 : Remove 5 const input seq instances
+SYN-1019 : Optimized 77 mux instances.
+SYN-1020 : Optimized 5 distributor mux.
+SYN-1019 : Optimized 710 mux instances.
+SYN-1016 : Merged 126 instances.
+SYN-1015 : Optimize round 2, 1367 better
+SYN-5011 WARNING: Undriven pin: model "abc_hdmi_top" / inst "u_writer/ramread3_syn_4" in ../../RTL_1/bridge/ab_bmp_sdram_writer.v(35) / pin "bea[0]"
+SYN-5011 WARNING: Undriven pin: model "abc_hdmi_top" / inst "u_writer/ramread3_syn_4" in ../../RTL_1/bridge/ab_bmp_sdram_writer.v(35) / pin "beb[0]"
+SYN-5025 WARNING: Using 0 for all undriven pins and nets
+SYN-3010 : Optimized 244 DFF(s)
+SYN-1014 : Optimize round 1
+SYN-1017 : Remove 1 const input seq instances
+SYN-1020 : Optimized 839 distributor mux.
+SYN-1019 : Optimized 9 mux instances.
+SYN-1001 : Optimize constant input of 1 erams.
+SYN-1016 : Merged 5081 instances.
+SYN-1015 : Optimize round 1, 5956 better
+SYN-1014 : Optimize round 2
+SYN-1044 : Optimized 1 inv instances.
+SYN-1020 : Optimized 229 distributor mux.
+SYN-2593 : bram inst: u_hdmi_top/u_osd/u_wave/ramread0_syn_46 will be optimized to a new one with A-width 9 due to unused data out
+SYN-1001 : Optimize constant input of 1 erams.
+SYN-1016 : Merged 584 instances.
+SYN-1015 : Optimize round 2, 823 better
+SYN-1014 : Optimize round 3
+SYN-2593 : bram inst: u_hdmi_top/u_osd/u_wave/ramread1_syn_46 will be optimized to a new one with A-width 9 due to unused data out
+SYN-1015 : Optimize round 3, 1 better
+SYN-1014 : Optimize round 4
+SYN-1015 : Optimize round 4, 0 better
+SYN-1001 : End Stage 1.6 | Optimize Iteratively; Time: 40.873077s wall, 39.500000s user + 0.437500s system = 39.937500s CPU (97.7%); Memory(MB): used = 688, reserved = 673, peak = 864;
+
+SYN-1079 : finish stage Optimize Iteratively. Total instances: 19193, Total nets: 22728.
+
+SYN-1001 : Stage 1.7 | Check Design
+SYN-1001 : End Stage 1.7 | Check Design; Time: 0.011196s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (139.6%); Memory(MB): used = 688, reserved = 673, peak = 864;
+
+SYN-1079 : finish stage Check Design. Total instances: 19193, Total nets: 22728.
+
+SYN-1001 : End Stage 1 | Optimize RTL; Time: 53.802922s wall, 51.968750s user + 0.593750s system = 52.562500s CPU (97.7%); Memory(MB): used = 688, reserved = 673, peak = 864;
+
+SYN-1079 : finish stage Optimize RTL. Total instances: 19193, Total nets: 22728.
+
+RUN-1003 : finish command "optimize_rtl" in  53.826526s wall, 51.984375s user + 0.593750s system = 52.578125s CPU (97.7%)
+
+RUN-1004 : used memory is 688 MB, reserved memory is 673 MB, peak memory is 864 MB
+RUN-1002 : start command "report_area -file ABC-project-1_rtl.area"
+RUN-1001 : standard
+***Report Model: abc_hdmi_top Device: EG4S20BG256***
+
+IO Statistics
+#IO                        27
+  #input                   10
+  #output                  16
+  #inout                    1
+#virtual IO                26
+  #input                    0
+  #output                   0
+  #inout                    0
+
+Gate Statistics
+#Basic gates            14880
+  #and                   3146
+  #nand                     0
+  #or                    2542
+  #nor                      0
+  #xor                    126
+  #xnor                     0
+  #buf                      0
+  #not                    676
+  #bufif1                  33
+  #MX21                  2779
+  #FADD                     0
+  #DFF                   5578
+  #LATCH                    0
+#MACRO_ADD                526
+#MACRO_EQ                 232
+#MACRO_MULT                29
+#MACRO_MUX               3365
+#MACRO_OTHERS              22
+
+RUN-1002 : start command "export_db ABC-project-1_rtl.db"
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported packer
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported ATMR Setting
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported ChipWatcher
+RUN-1002 : start command "commit_param -step gate"
+RUN-1001 : Print Global Property
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   Parameters   |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   enable_seed  |    off     |       off        |        
+RUN-1001 :     message    |  standard  |     standard     |        
+RUN-1001 :   qor_monitor  |     on     |        on        |        
+RUN-1001 :   syn_ip_flow  |    off     |       off        |        
+RUN-1001 :     thread     |    auto    |       auto       |        
+RUN-1001 : --------------------------------------------------------
+RUN-1001 : Print Gate Property
+RUN-1001 : -----------------------------------------------------------
+RUN-1001 :     Parameters    |  Settings  |  Default Values  |  Note  
+RUN-1001 : -----------------------------------------------------------
+RUN-1001 :     eram_init     |    off     |       off        |        
+RUN-1001 :      map_mode     |    auto    |       auto       |        
+RUN-1001 :    pack_effort    |   medium   |      medium      |        
+RUN-1001 :   pack_seq_in_io  |    auto    |       auto       |        
+RUN-1001 :       report      |  standard  |     standard     |        
+RUN-1001 : -----------------------------------------------------------
+RUN-1002 : start command "optimize_gate -packarea ABC-project-1_gate.area"
+RUN-1001 : Open license file C:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/license/Anlogic.lic
+SYN-1001 : Stage 2 | Optimize Gate
+SYN-1001 : Stage 2.1 | Map Reg
+SYN-1001 : End Stage 2.1 | Map Reg; Time: 0.765193s wall, 0.718750s user + 0.031250s system = 0.750000s CPU (98.0%); Memory(MB): used = 574, reserved = 668, peak = 864;
+
+SYN-1079 : finish stage Map Reg. Total instances: 19193, Total nets: 22728.
+
+SYN-1001 : Stage 2.2 | Map IO
+SYN-2002 : EG_PHY_SDRAM_2M_32 instance u_sdram.
+SYN-2001 : Map 108 IOs to PADs of model 'abc_hdmi_top'
+SYN-1001 : End Stage 2.2 | Map IO; Time: 0.210822s wall, 0.218750s user + 0.000000s system = 0.218750s CPU (103.8%); Memory(MB): used = 575, reserved = 669, peak = 864;
+
+SYN-1001 : Stage 2.3 | Map Macro
+RUN-1002 : start command "update_pll_param -module abc_hdmi_top"
+SYN-6577 WARNING: The clock signal "u_sdr_as_ram/SDRAM_CLK" is added with the synthetic instruction (keep/mark_debug/dont_touch/max_fanout), which may create additional logic on this net
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2501 : 2 BUFG to GCLK
+SYN-2541 : Logic Ram FIFO "u_hdmi_top/u3_hdmi_tx/u_core/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/U_audio_sample_packet_2_channel/u_w96_d1024_fifo/u_logic_ramfifo"
+SYN-2541 : Logic Ram FIFO "u_hdmi_top/u3_hdmi_tx/u_core/u_hdmi_tx_controller_wrapper/u_video_axi_stream_receiver/u_w24_d1024_fifo/u_logic_ramfifo"
+SYN-6562 WARNING: The init value of "u_b_stream/u_audio_fifo/ramread0_syn_4(../../RTL_1/abc_audio/abc_pcm_fifo.v(85))" will be ignored since gate eram_init is set to off
+SYN-6562 WARNING: The init value of "u_fifo/ramread0_syn_4(../../RTL_1/a_core/afifo_24x256.v(96))" will be ignored since gate eram_init is set to off
+SYN-6562 WARNING: The init value of "u_hdmi_top/u3_hdmi_tx/u_core/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/U_audio_sample_packet_2_channel/u_w96_d1024_fifo/u_logic_ramfifo_syn_497(../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(0))" will be ignored since gate eram_init is set to off
+SYN-6562 WARNING: The init value of "u_hdmi_top/u3_hdmi_tx/u_core/u_hdmi_tx_controller_wrapper/u_video_axi_stream_receiver/u_w24_d1024_fifo/u_logic_ramfifo_syn_353(../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(0))" will be ignored since gate eram_init is set to off
+SYN-6562 WARNING: The init value of "u_writer/ramread0_syn_4(../../RTL_1/bridge/ab_bmp_sdram_writer.v(34))" will be ignored since gate eram_init is set to off
+SYN-6562 WARNING: The init value of "u_writer/ramread1_syn_4(../../RTL_1/bridge/ab_bmp_sdram_writer.v(35))" will be ignored since gate eram_init is set to off
+SYN-6562 WARNING: The init value of "u_writer/ramread2_syn_4(../../RTL_1/bridge/ab_bmp_sdram_writer.v(35))" will be ignored since gate eram_init is set to off
+SYN-6562 WARNING: The init value of "u_writer/ramread3_syn_4(../../RTL_1/bridge/ab_bmp_sdram_writer.v(35))" will be ignored since gate eram_init is set to off
+SYN-2571 : Map 29 macro multiplier
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1016 : Merged 117 instances.
+SYN-2571 : Optimize after map_dsp, round 1, 117 better
+SYN-2571 : Optimize after map_dsp, round 2
+SYN-2571 : Optimize after map_dsp, round 2, 0 better
+SYN-1001 : Throwback 303 control mux instances
+SYN-1001 : Generate 48 bigger adders
+SYN-1001 : Optimize 92 adders
+SYN-1001 : Convert 12 adder
+SYN-1001 : Optimize 7 less-than instances
+SYN-2501 : Optimize round 1
+SYN-1016 : Merged 637 instances.
+SYN-2501 : Optimize round 1, 2646 better
+SYN-2501 : Optimize round 2
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Optimize round 1
+SYN-1016 : Merged 2 instances.
+SYN-2501 : Optimize round 1, 3 better
+SYN-2501 : Optimize round 2
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 476 macro adder(s)
+SYN-1019 : Optimized 3311 mux instances.
+SYN-1016 : Merged 884 instances.
+SYN-5011 WARNING: Undriven pin: model "abc_hdmi_top" / inst "u_sdr_as_ram/u2_wrrd/Sdr_rd_dout_reg[0]" in ../../RTL_1/enc_file/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "abc_hdmi_top" / inst "u_sdr_as_ram/u2_wrrd/Sdr_rd_dout_reg[1]" in ../../RTL_1/enc_file/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "abc_hdmi_top" / inst "u_sdr_as_ram/u2_wrrd/Sdr_rd_dout_reg[2]" in ../../RTL_1/enc_file/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "abc_hdmi_top" / inst "u_sdr_as_ram/u2_wrrd/Sdr_rd_dout_reg[3]" in ../../RTL_1/enc_file/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "abc_hdmi_top" / inst "u_sdr_as_ram/u2_wrrd/Sdr_rd_dout_reg[4]" in ../../RTL_1/enc_file/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "abc_hdmi_top" / inst "u_sdr_as_ram/u2_wrrd/Sdr_rd_dout_reg[5]" in ../../RTL_1/enc_file/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "abc_hdmi_top" / inst "u_sdr_as_ram/u2_wrrd/Sdr_rd_dout_reg[6]" in ../../RTL_1/enc_file/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "abc_hdmi_top" / inst "u_sdr_as_ram/u2_wrrd/Sdr_rd_dout_reg[7]" in ../../RTL_1/enc_file/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "abc_hdmi_top" / inst "u_sdr_as_ram/u2_wrrd/Sdr_rd_dout_reg[8]" in ../../RTL_1/enc_file/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "abc_hdmi_top" / inst "u_sdr_as_ram/u2_wrrd/Sdr_rd_dout_reg[9]" in ../../RTL_1/enc_file/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 Similar messages will be suppressed.
+SYN-5025 WARNING: Using 0 for all undriven pins and nets
+SYN-1001 : End Stage 2.3 | Map Macro; Time: 8.677997s wall, 8.390625s user + 0.046875s system = 8.437500s CPU (97.2%); Memory(MB): used = 622, reserved = 707, peak = 864;
+
+SYN-1079 : finish stage Map Macro. Total instances: 31011, Total nets: 35838.
+
+SYN-1001 : Stage 2.4 | Map Gate
+SYN-3001 : Collect 8205 PI 4346 PO (154 timing unconstrained) for mapping
+SYN-2581 : Mapping with K=5, #lut = 8136 (3.32), #lev = 14 (3.27), #crit_level = 0
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=5, #lut = 8136 (3.32), #lev = 14 (3.33), #crit_level = 0
+SYN-3001 : Logic optimization opt = 4.86 sec, map = 1.85 sec, post map opt = 5.46 sec.
+SYN-3001 : Mapper removed 1 lut buffers
+SYN-1001 : End Stage 2.4 | Map Gate; Time: 19.665884s wall, 19.140625s user + 0.109375s system = 19.250000s CPU (97.9%); Memory(MB): used = 677, reserved = 769, peak = 864;
+
+SYN-1001 : Packing model "abc_hdmi_top" ...
+SYN-4010 : Pack lib has 58 rtl pack models with 26 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 5555 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 143 carry chain into lslice
+SYN-4007 : Packing 2705 adder to BLE ...
+SYN-4008 : Packed 2705 adder and 20 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4013 : Packed 544 DRAM and 0 SEQ.
+RUN-1002 : start command "report_qor -step gate -file gate.qor"
+RUN-1002 : start command "start_timer"
+RUN-1003 : finish command "start_timer" in  1.627750s wall, 1.578125s user + 0.031250s system = 1.609375s CPU (98.9%)
+
+RUN-1004 : used memory is 674 MB, reserved memory is 766 MB, peak memory is 864 MB
+-----------------------------------------------------------
+| QoR metrics               |         value               |
+-----------------------------------------------------------
+| Timing                    |                             |
+|     Setup WNS             |        -1291                |
+|     Setup TNS             |       -41558                |
+|     Num of violated S-EP  |           33                |
+|     Hold WNS              |          471                |
+|     Hold TNS              |            0                |
+|     Num of violated H-EP  |            0                |
+-----------------------------------------------------------
+| Utilization               |                             |
+|     #registers            |         5535                |
+|     #luts                 |         8156                |
+|     #lut1                 |           98                |
+|     #lut1(~A)             |           72                |
+|     #slices               |         3797                |
+|     slices percentage     |       38.74%                |
+|     #RAMs                 |           47                |
+|     #DSPs                 |           18                |
+|     #f7mux                |        0.00%                |
+|     #MACROs               |          902                |
+|     #insts in MACRO       |         3797                |
+-----------------------------------------------------------
+| kept_net                  |                             |
+|     #syn_keep             |           66                |
+|     #keep_hier            |            0                |
+|     #dont_touch           |            0                |
+|     #mark_debug           |            0                |
+|     #max_fanout_keep      |            0                |
+|     #async_reg            |            0                |
+-----------------------------------------------------------
+| Top 10% datanet fanout#   |        85.06                |
+| dff(single fanout)->dff   |          864                |
+| dff(single fanout)->dram  |            0                |
+-----------------------------------------------------------
+| Over-quota path num*      |                             |
+|     Total                 |            0                |
+-----------------------------------------------------------
+| Rent**                    |                             |
+-----------------------------------------------------------
+Note*: Over-quota path shows the over-path-level-threshold path number of each clock.
+       The clock will not be shown if no path is with path level over the threshold.
+       The threshold is defined as worst path_margin / 800ps.
+Note**: Rent shows the rent exponent value of the modules whose rent value exceeds the threshold.
+        Only modules under top are reported, and the threshold is defined as 0.7.
+
+Logic Level Distribution
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Clock         |  Period            |  0     |  1     |  2    |  3     |  4    |  5     |  6    |  7    |  8    |  9    |  10   |  11   |  12  |  13  |  14  |  15  |  16  |  17  |  18
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  pixel_clk     |  25.000ns (40MHz)  |  1758  |  2365  |  232  |  290   |  272  |  232   |  141  |  71   |  32   |  466  |  24   |  13   |  18  |  1   |  11  |  31  |  7   |  4   |  11
+  pixel_clk_5x  |  5.000ns (200MHz)  |  21    |  33    |  0    |  0     |  0    |  0     |  0    |  0    |  0    |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0   |  0   |  0
+  sdr_clk       |  20.000ns (50MHz)  |  533   |  218   |  272  |  199   |  51   |  92    |  30   |  113  |  11   |  1    |  0    |  0    |  2   |  0   |  0   |  0   |  0   |  0   |  0
+  sdr_clk_sft   |  20.000ns (50MHz)  |  16    |  32    |  0    |  0     |  0    |  0     |  0    |  0    |  0    |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0   |  0   |  0
+  sys_clk       |  20.000ns (50MHz)  |  2483  |  810   |  480  |  756   |  649  |  712   |  506  |  209  |  282  |  77   |  144  |  90   |  75  |  11  |  38  |  0   |  0   |  0   |  0
+  Total         |  NA                |  4811  |  3458  |  984  |  1245  |  972  |  1036  |  677  |  393  |  325  |  544  |  168  |  103  |  95  |  12  |  49  |  31  |  7   |  4   |  11
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Note: The table count the worst 100000 paths, each endpoint count only one time.(14925 paths analyzed)
+
+Hierarchical Rent Exponent Report
++--------------------------------------------------------------------+
+|Inst         |Model          |Rent     |Cell     |Pin     |Term     |
++--------------------------------------------------------------------+
+|top          |abc_hdmi_top   |0.17     |17772    |100496  |29       |
+|  u_b_stream |abc_sd_media_1 |0.43     |7090     |36361   |224      |
+|  u_hdmi_top |hdmi_top_7     |0.41     |8146     |53775   |260      |
++--------------------------------------------------------------------+
+Note: Cell represents total number of cells inside module; Pin represents total number of pins
+      which have net connection inside module; Term represents total number of PIs and POs of module.
+      Rent represents the relationship between number of terms and number of cells in module.
+      A module with higher rent corresponds to highly connected logic and strong connectivity with others.
+Report gate stage QoR done.
+
+SYN-1001 : The design has 8 dangling syn_keep insts.
+RUN-1003 : finish command "report_qor -step gate -file gate.qor" in  6.161171s wall, 5.953125s user + 0.078125s system = 6.031250s CPU (97.9%)
+
+RUN-1004 : used memory is 708 MB, reserved memory is 800 MB, peak memory is 864 MB
+RUN-1002 : start command "report_area -file ABC-project-1_gate.area"
+RUN-1001 : standard
+***Report Model: abc_hdmi_top Device: EG4S20BG256***
+
+IO Statistics
+#IO                        27   out of    188   14.36%
+  #input                   10
+  #output                  16
+  #inout                    1
+#virtual IO                26
+  #input                    0
+  #output                   0
+  #inout                    0
+
+LUT Statistics
+#Total_luts              8156
+  #lut4                  7396
+  #lut5                   760
+  #lut6                     0
+  #lut5_mx41                0
+  #lut4_alu1b               0
+
+Utilization Statistics
+#lut                    15750   out of  19600   80.36%
+#reg                     5555   out of  19600   28.34%
+#bram                      47   out of     64   73.44%
+  #bram9k                  47
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#dsp                       18   out of     29   62.07%
+#pad                       35   out of    188   18.62%
+  #ireg                     8
+  #oreg                    14
+  #treg                     0
+#pll                        2   out of      4   50.00%
+#gclk                       2   out of     16   12.50%
+
+SYN-1001 : End Stage 2 | Optimize Gate; Time: 40.969973s wall, 36.171875s user + 3.750000s system = 39.921875s CPU (97.4%); Memory(MB): used = 708, reserved = 800, peak = 864;
+
+RUN-1003 : finish command "optimize_gate -packarea ABC-project-1_gate.area" in  40.992889s wall, 36.203125s user + 3.750000s system = 39.953125s CPU (97.5%)
+
+RUN-1004 : used memory is 708 MB, reserved memory is 800 MB, peak memory is 864 MB
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1001 : Stage 3 | Legalize Phy Inst
+SYN-1011 : Flatten model abc_hdmi_top
+SYN-1001 : End Stage 3 | Legalize Phy Inst; Time: 0.126323s wall, 0.125000s user + 0.000000s system = 0.125000s CPU (99.0%); Memory(MB): used = 708, reserved = 800, peak = 864;
+
+RUN-1002 : start command "update_timing"
+RUN-1002 : start command "start_timer"
+RUN-1003 : finish command "start_timer" in  1.658958s wall, 1.656250s user + 0.000000s system = 1.656250s CPU (99.8%)
+
+RUN-1004 : used memory is 708 MB, reserved memory is 800 MB, peak memory is 864 MB
+RUN-1003 : finish command "update_timing" in  3.149625s wall, 3.125000s user + 0.015625s system = 3.140625s CPU (99.7%)
+
+RUN-1004 : used memory is 708 MB, reserved memory is 800 MB, peak memory is 864 MB
+RUN-1002 : start command "report_timing_status -file ABC-project-1_gate.ts"
+RUN-1002 : start command "report_timing_summary -file ABC-project-1_gate.timing"
+RUN-1002 : start command "flow_status -file flow.status"
+Location         : C:\Users\m_yy\Desktop\ABC-project-1\ABC-project-1_Runs\syn_1
+Running with     : Tang Dynasty v6.2.168116
+                   Copyright (c) 2012-2025 Anlogic Inc.
+Top Model        : abc_hdmi_top
+Device           : EG4S20BG256
+Speed            : NA
+
+Timing Mode      : basic
+Setup            : WNS -1291ps  TNS   -41558ps  NUM_FEPS    33
+Hold             : WNS   471ps  TNS        0ps  NUM_FEPS     0
+
+Flow Statistics  :
+RUN-1001 : Flow Statistics:
+RUN-1001 : --------------------------------------------------------------------------------------------------
+RUN-1001 :      command     |  #calls  |  wall time  |  cpu time(s)  |  used memory(mb)  |  peak memory(mb)  
+RUN-1001 : --------------------------------------------------------------------------------------------------
+RUN-1001 :   optimize_rtl   |    1     |  53s(56%)   |    51(56%)    |        688        |        864        
+RUN-1001 :   optimize_gate  |    1     |  40s(43%)   |    39(43%)    |        708        |        864        
+RUN-1001 :   import_device  |    1     |   0s(0%)    |     0(0%)     |        84         |        84         
+RUN-1001 :     read_adc     |    1     |   0s(0%)    |     0(0%)     |        241        |        241        
+RUN-1001 :     read_sdc     |    1     |   0s(0%)    |     0(0%)     |        241        |        241        
+RUN-1001 : --------------------------------------------------------------------------------------------------
+RUN-1001 :       total      |    5     |    1m33s    |      90       |        708        |        864        
+RUN-1001 : --------------------------------------------------------------------------------------------------
+RUN-1002 : start command "export_db ABC-project-1_gate.db"
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported packer
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported ATMR Setting
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported ChipWatcher
+RUN-1002 : start command "export_flow_status -s read_design -e opt_gate"
+RUN-1002 : start command "flow_status"
+
+Location         : C:\Users\m_yy\Desktop\ABC-project-1\ABC-project-1_Runs\syn_1
+Running with     : Tang Dynasty v6.2.168116
+                   Copyright (c) 2012-2025 Anlogic Inc.
+Top Model        : abc_hdmi_top
+Device           : EG4S20BG256
+Speed            : NA
+
+Timing Mode      : basic
+Setup            : WNS -1291ps  TNS   -41558ps  NUM_FEPS    33
+Hold             : WNS   471ps  TNS        0ps  NUM_FEPS     0
+
+RUN-1001 : Flow Statistics:
+RUN-1001 : --------------------------------------------------------------------------------------------------
+RUN-1001 :      command     |  #calls  |  wall time  |  cpu time(s)  |  used memory(mb)  |  peak memory(mb)  
+RUN-1001 : --------------------------------------------------------------------------------------------------
+RUN-1001 :   optimize_rtl   |    1     |  53s(56%)   |    51(56%)    |        688        |        864        
+RUN-1001 :   optimize_gate  |    1     |  40s(43%)   |    39(43%)    |        708        |        864        
+RUN-1001 :   import_device  |    1     |   0s(0%)    |     0(0%)     |        84         |        84         
+RUN-1001 :     read_adc     |    1     |   0s(0%)    |     0(0%)     |        241        |        241        
+RUN-1001 :     read_sdc     |    1     |   0s(0%)    |     0(0%)     |        241        |        241        
+RUN-1001 : --------------------------------------------------------------------------------------------------
+RUN-1001 :       total      |    5     |    1m33s    |      90       |        708        |        864        
+RUN-1001 : --------------------------------------------------------------------------------------------------

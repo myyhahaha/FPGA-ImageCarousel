@@ -1,0 +1,13 @@
+{
+  "source": "C:\\Users\\m_yy\\Desktop\\雪\\峨眉雪_后弦.mp3",
+  "source_sha256": "19d4d45a7f48fed7fe916ca4a9e50f32cdb1ff6fa054fbd45265cae06f83a1c2",
+  "wav_sha256": "1d75fa1d2f5dd7e9105f4740ca8fdd4a09989c06eec5443d96860e6ca07490ea",
+  "sample_rate": 48000,
+  "channels": 1,
+  "bits": 16,
+  "sample_frames": 11198085,
+  "seconds": 233.2934375,
+  "bytes": 22396214,
+  "playback": "full track loop, same mono PCM to left/right HDMI channels",
+  "sd_transfer_rate_bytes_per_second": 96000
+}

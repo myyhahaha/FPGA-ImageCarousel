@@ -1,0 +1,42 @@
+[
+  {
+    "file": "IMAGE1.BMP",
+    "sha256": "5c684b8230f1fc56e443581ef2ffc0aa76772172afcccb49f0f9392b838d6548",
+    "pixels": 307200
+  },
+  {
+    "file": "IMAGE2.BMP",
+    "sha256": "97e53f514debe9c5b8c401efcd8723b39cce9213a3f328c372dead31a80129ad",
+    "pixels": 307200
+  },
+  {
+    "file": "IMAGE3.BMP",
+    "sha256": "c9c4ebd909bc204d1c869c593ecde125a38403badec5167ecee14bfb3075dbc0",
+    "pixels": 307200
+  },
+  {
+    "file": "IMAGE4.BMP",
+    "sha256": "66ddf773190c7e7132b6efc3ec7872f938097fe07ee66345fbd14aeea358489d",
+    "pixels": 307200
+  },
+  {
+    "file": "IMAGE5.BMP",
+    "sha256": "87634100a36d943e8ea1b654895f0aabd8909137c648d891cb9854ed64244442",
+    "pixels": 307200
+  },
+  {
+    "file": "IMAGE6.BMP",
+    "sha256": "45a3ca0335e7704bf64a8cd9f0b2fbe59d496c512b841c2474bd4afda761530f",
+    "pixels": 307200
+  },
+  {
+    "file": "IMAGE7.BMP",
+    "sha256": "bc6caa2a55464636b4574e09f55f1d7b8341a16f09ceec21c613e79f3131297b",
+    "pixels": 307200
+  },
+  {
+    "file": "IMAGE8.BMP",
+    "sha256": "9783134e0c9a086c279d9fa028378ff75c3535507da0983e26a32694cfe64b7e",
+    "pixels": 307200
+  }
+]

@@ -1,0 +1,9 @@
+IMAGE1 header/first row OK
+IMAGE2 header/first row OK
+IMAGE3 header/first row OK
+IMAGE4 header/first row OK
+IMAGE5 header/first row OK
+IMAGE6 header/first row OK
+IMAGE7 header/first row OK
+IMAGE8 header/first row OK
+PASS all files: IMAGE1..8 FAT32 lookup/header/BGR pixels with backpressure/restart, 768 pixels

@@ -1,0 +1,1 @@
+PASS multiplier reference: 160008 comparisons against installed Anlogic library; all signed/unsigned lane combinations, combinational/registered B, async reset
