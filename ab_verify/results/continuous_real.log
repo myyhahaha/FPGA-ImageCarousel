@@ -1,0 +1,98 @@
+progress t=100000000000 load=2 display=1 alpha=0 source=11 checked=0
+startup image=1
+preview commit 1: image=1 cached=01
+progress t=200000000000 load=2 display=1 alpha=0 source=22 checked=2431988
+progress t=300000000000 load=3 display=1 alpha=6 source=22 checked=5327860
+progress t=400000000000 load=4 display=1 alpha=12 source=22 checked=8223732
+progress t=500000000000 load=4 display=1 alpha=18 source=22 checked=11119604
+progress t=600000000000 load=5 display=1 alpha=24 source=22 checked=14015476
+progress t=700000000000 load=5 display=1 alpha=30 source=22 checked=16911348
+preview commit 2: image=2 cached=0f
+progress t=800000000000 load=6 display=2 alpha=4 source=22 checked=19807220
+progress t=900000000000 load=6 display=2 alpha=10 source=22 checked=22703200
+progress t=1000000000000 load=7 display=2 alpha=16 source=22 checked=25599200
+progress t=1100000000000 load=7 display=2 alpha=22 source=22 checked=28495092
+progress t=1200000000000 load=8 display=2 alpha=28 source=22 checked=31390964
+preview commit 3: image=3 cached=7f
+progress t=1300000000000 load=8 display=3 alpha=2 source=a5 checked=34286836
+progress t=1400000000000 load=8 display=3 alpha=8 source=a5 checked=37182708
+progress t=1500000000000 load=8 display=3 alpha=14 source=a5 checked=40078580
+progress t=1600000000000 load=8 display=3 alpha=20 source=a5 checked=42974452
+progress t=1700000000000 load=8 display=3 alpha=26 source=a5 checked=45870400
+preview commit 4: image=4 cached=ff
+progress t=1800000000000 load=8 display=4 alpha=0 source=a5 checked=48766400
+progress t=1900000000000 load=8 display=4 alpha=6 source=a5 checked=51662324
+progress t=2000000000000 load=8 display=4 alpha=12 source=a5 checked=54558196
+progress t=2100000000000 load=8 display=4 alpha=18 source=a5 checked=57454068
+progress t=2200000000000 load=8 display=4 alpha=24 source=a5 checked=60349940
+progress t=2300000000000 load=8 display=4 alpha=30 source=a5 checked=63245812
+preview commit 5: image=5 cached=ff
+progress t=2400000000000 load=8 display=5 alpha=4 source=a5 checked=66141684
+progress t=2500000000000 load=8 display=5 alpha=10 source=a5 checked=69037600
+progress t=2600000000000 load=8 display=5 alpha=16 source=a5 checked=71933600
+progress t=2700000000000 load=8 display=5 alpha=22 source=a5 checked=74829556
+progress t=2800000000000 load=8 display=5 alpha=28 source=a5 checked=77725428
+preview commit 6: image=6 cached=ff
+progress t=2900000000000 load=8 display=6 alpha=2 source=a5 checked=80621300
+progress t=3000000000000 load=8 display=6 alpha=8 source=a5 checked=83517172
+progress t=3100000000000 load=8 display=6 alpha=15 source=a5 checked=86400000
+progress t=3200000000000 load=8 display=6 alpha=21 source=a5 checked=89286516
+progress t=3300000000000 load=8 display=6 alpha=27 source=a5 checked=92182400
+preview commit 7: image=7 cached=ff
+progress t=3400000000000 load=8 display=7 alpha=1 source=a5 checked=95078400
+progress t=3500000000000 load=8 display=7 alpha=7 source=a5 checked=97974388
+progress t=3600000000000 load=8 display=7 alpha=13 source=a5 checked=100870260
+progress t=3700000000000 load=8 display=7 alpha=19 source=a5 checked=103766132
+progress t=3800000000000 load=8 display=7 alpha=25 source=a5 checked=106662004
+progress t=3900000000000 load=8 display=7 alpha=31 source=a5 checked=109557876
+preview commit 8: image=8 cached=ff
+progress t=4000000000000 load=8 display=8 alpha=5 source=a5 checked=112453748
+progress t=4100000000000 load=8 display=8 alpha=11 source=a5 checked=115349620
+progress t=4200000000000 load=8 display=8 alpha=17 source=a5 checked=118245600
+progress t=4300000000000 load=8 display=8 alpha=23 source=a5 checked=121141600
+progress t=4400000000000 load=8 display=8 alpha=29 source=a5 checked=124037492
+preview commit 9: image=1 cached=ff
+PASS startup preview: 1..8..1 complete, first image early, all inputs ignored, final fade committed before unlock
+progress t=4500000000000 load=8 display=1 alpha=1 source=a5 checked=126933364
+progress t=4600000000000 load=8 display=1 alpha=7 source=a5 checked=129829236
+progress t=4700000000000 load=8 display=1 alpha=13 source=a5 checked=132725108
+progress t=4800000000000 load=8 display=1 alpha=19 source=a5 checked=135620980
+progress t=4900000000000 load=8 display=1 alpha=25 source=a5 checked=138516852
+progress t=5000000000000 load=8 display=1 alpha=31 source=a5 checked=141412800
+K1 fade: 1 -> 2; reverse key queued during fade
+progress t=5100000000000 load=8 display=2 alpha=5 source=a5 checked=144308800
+progress t=5200000000000 load=8 display=2 alpha=11 source=a5 checked=147204724
+progress t=5300000000000 load=8 display=2 alpha=17 source=a5 checked=150100596
+progress t=5400000000000 load=8 display=2 alpha=23 source=a5 checked=152996468
+progress t=5500000000000 load=8 display=2 alpha=29 source=a5 checked=155892340
+queued K2 fade: 2 -> 1
+progress t=5600000000000 load=8 display=1 alpha=1 source=a5 checked=158788212
+progress t=5700000000000 load=8 display=1 alpha=7 source=a5 checked=161684084
+progress t=5800000000000 load=8 display=1 alpha=13 source=a5 checked=164580000
+progress t=5900000000000 load=8 display=1 alpha=19 source=a5 checked=167476000
+progress t=6000000000000 load=8 display=1 alpha=25 source=a5 checked=170371956
+progress t=6100000000000 load=8 display=1 alpha=31 source=a5 checked=173267828
+progress t=6200000000000 load=8 display=2 alpha=0 source=a5 checked=176160000
+progress t=6300000000000 load=8 display=2 alpha=0 source=a5 checked=179040000
+progress t=6400000000000 load=8 display=2 alpha=0 source=a5 checked=181933044
+progress t=6500000000000 load=8 display=2 alpha=0 source=a5 checked=184828916
+progress t=6600000000000 load=8 display=2 alpha=0 source=a5 checked=187724800
+progress t=6700000000000 load=8 display=2 alpha=0 source=a5 checked=190620800
+progress t=6800000000000 load=8 display=2 alpha=0 source=a5 checked=193516788
+progress t=6900000000000 load=8 display=2 alpha=0 source=a5 checked=196412660
+progress t=7000000000000 load=8 display=2 alpha=0 source=a5 checked=199308532
+progress t=7100000000000 load=8 display=2 alpha=0 source=a5 checked=202204404
+progress t=7200000000000 load=8 display=2 alpha=4 source=a5 checked=205100276
+progress t=7300000000000 load=8 display=2 alpha=10 source=a5 checked=207996148
+progress t=7400000000000 load=8 display=2 alpha=16 source=a5 checked=210892020
+progress t=7500000000000 load=8 display=2 alpha=22 source=a5 checked=213788000
+progress t=7600000000000 load=8 display=2 alpha=28 source=a5 checked=216684000
+PASS resident cache integration: eight source loads including reset; preview 1..8..1; zero picture reloads during manual/queued/automatic switches
+PASS integrated K3/K4 brightness: 87.5/100/112.5 percent across cached switches and crossfades, frame-atomic, OSD and music preserved
+PASS integrated music: 363647 ordered reference-song PCM frames, zero playback underruns, frame-stable waveform compositing
+PASS startup alignment: 3360000 initial loading pixels held black; first preview image, OSD and audio started together; elapsed time continuous across preview return and all switches, 303039264 displayed clocks
+PASS continuous ORIGINAL BMP fade + OSD: eight untouched user files + real FAT32/BMP + writer + dual-frame reader + FIFO + VGA + alpha/ROM/ticker/timer, 456 frames, 219360000 exact RGB888 active pixels, 372 mixed frames, all 31 intermediate weights; preview/manual/queued/automatic, no underflow/tearing/protected-slot write
+- ab_verify\tb_continuous_real.v:160: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.49
+- Verilator: $finish at 8s; walltime 783.324 s; speed 10.165 ms/s
+- Verilator: cpu 756.703 s on 1 threads; allocated 68 MB
