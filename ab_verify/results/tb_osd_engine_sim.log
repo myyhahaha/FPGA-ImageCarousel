@@ -1,1 +1,0 @@
-PASS OSD engine: 1264336 independent Python reference pixels; 3 alpha layers, all fractional phases, ticker wrap, all top/bottom pixels and real PCM envelope, RGB bypass, blanking, sync/coordinate latency, reset

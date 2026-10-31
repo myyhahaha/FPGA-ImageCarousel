@@ -1,6 +1,0 @@
-PASS mapped K3/K4: real 20ms debounce, 1228800 brightened picture pixels and 921600 restored picture pixels; OSD and serialized HDMI checked
-PASS HDMI music output: 4320000 exact regenerated RGB pixels, 7923 ordered 24-bit stereo PCM samples, 7923 audio packets, 138 ACR packets, 21 infoframes, 84795 packet BCH blocks, 6603093 pin serializer words
-- ab_verify\tb_hdmi_output.sv:182: Verilog $finish
-- S i m u l a t i o n   R e p o r t: Verilator 5.49
-- Verilator: $finish at 165ms; walltime 131.294 s; speed 1.296 ms/s
-- Verilator: cpu 127.344 s on 1 threads; allocated 30 MB

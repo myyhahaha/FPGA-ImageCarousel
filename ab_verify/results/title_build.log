@@ -1,6 +1,0 @@
-Synthesis... (td_static/td_synth.log)
-Place, route and bit generation... (td_static/td_physical.log)
-PASS. New bitstream: ABC-project-1.bit
-SWNS: 0.811ns, STNS: 0.000ns.
-HWNS: 0.003ns, HTNS: 0.000ns.
-
