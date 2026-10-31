@@ -12,16 +12,16 @@ IO Statistics
   #inout                    0
 
 LUT Statistics
-#Total_luts              8156
-  #lut4                  7396
-  #lut5                   760
+#Total_luts              8230
+  #lut4                  7465
+  #lut5                   765
   #lut6                     0
   #lut5_mx41                0
   #lut4_alu1b               0
 
 Utilization Statistics
-#lut                    15750   out of  19600   80.36%
-#reg                     5555   out of  19600   28.34%
+#lut                    15814   out of  19600   80.68%
+#reg                     5548   out of  19600   28.31%
 #bram                      47   out of     64   73.44%
   #bram9k                  47
   #fifo9k                   0
@@ -38,38 +38,38 @@ Report Hierarchy Area:
 +-------------------------------------------------------------------------------------------------------------------------------+
 |Instance                                      |Module                             |lut     |ripple  |seq     |bram    |dsp     |
 +-------------------------------------------------------------------------------------------------------------------------------+
-|top                                           |abc_hdmi_top                       |13585   |2165    |5577    |47      |18      |
-|  u_b_stream                                  |abc_sd_media                       |5119    |782     |2247    |8       |4       |
-|    sd                                        |sd_card_top                        |267     |24      |182     |0       |0       |
-|      sd_card_cmd_m0                          |sd_card_cmd                        |140     |19      |48      |0       |0       |
+|top                                           |abc_hdmi_top                       |13654   |2160    |5570    |47      |18      |
+|  u_b_stream                                  |abc_sd_media                       |5126    |788     |2241    |8       |4       |
+|    sd                                        |sd_card_top                        |265     |24      |182     |0       |0       |
+|      sd_card_cmd_m0                          |sd_card_cmd                        |138     |19      |48      |0       |0       |
 |      sd_card_sec_read_write_m0               |sd_card_sec_read_write             |64      |0       |90      |0       |0       |
 |      spi_master_m0                           |spi_master                         |63      |5       |44      |0       |0       |
-|    u_audio_fifo                              |abc_pcm_fifo                       |188     |16      |158     |8       |0       |
-|    u_find                                    |abc_wav_find                       |698     |109     |339     |0       |0       |
-|    u_images                                  |sd_bmp_stream_top                  |2527    |432     |1187    |0       |4       |
-|      reader                                  |fat32_bmp_reader                   |1644    |239     |932     |0       |0       |
-|      stream                                  |bmp_pixel_stream                   |881     |193     |253     |0       |4       |
-|    u_music                                   |abc_wav_stream                     |1329    |201     |276     |0       |0       |
+|    u_audio_fifo                              |abc_pcm_fifo                       |193     |16      |158     |8       |0       |
+|    u_find                                    |abc_wav_find                       |688     |109     |333     |0       |0       |
+|    u_images                                  |sd_bmp_stream_top                  |2537    |438     |1187    |0       |4       |
+|      reader                                  |fat32_bmp_reader                   |1652    |241     |932     |0       |0       |
+|      stream                                  |bmp_pixel_stream                   |883     |197     |253     |0       |4       |
+|    u_music                                   |abc_wav_stream                     |1333    |201     |276     |0       |0       |
 |    u_sectors                                 |abc_sd_sector_arbiter              |110     |0       |105     |0       |0       |
 |  u_cache                                     |ab_image_cache_ctrl                |224     |8       |114     |0       |0       |
 |  u_clk_sdr                                   |clk_sdr                            |0       |0       |0       |0       |0       |
 |  u_clk_wize                                  |clk_wize                           |0       |0       |0       |0       |0       |
 |  u_fade                                      |ab_fade_ctrl                       |30      |0       |35      |0       |0       |
-|  u_fifo                                      |afifo_24x1024                      |84      |9       |90      |3       |0       |
-|  u_hdmi_top                                  |hdmi_top                           |7329    |1235    |2148    |25      |8       |
-|    u3_hdmi_tx                                |abc_hdmi_audio_tx                  |5178    |227     |1561    |14      |0       |
+|  u_fifo                                      |afifo_24x1024                      |85      |9       |90      |3       |0       |
+|  u_hdmi_top                                  |hdmi_top                           |7378    |1216    |2147    |25      |8       |
+|    u3_hdmi_tx                                |abc_hdmi_audio_tx                  |5187    |229     |1561    |14      |0       |
 |      u_acr                                   |abc_acr_calc                       |43      |14      |47      |0       |0       |
 |      u_axis                                  |abc_video_rgb_to_axis              |19      |3       |40      |0       |0       |
-|      u_core                                  |hdmi_1_4b_transmitter_core_wrapper |1152    |198     |1370    |14      |0       |
+|      u_core                                  |hdmi_1_4b_transmitter_core_wrapper |1163    |200     |1370    |14      |0       |
 |        u0_reset_sync                         |hdmi_1_4b_tx_reset_sync            |0       |0       |2       |0       |0       |
-|        u_hdmi_tx_controller_wrapper          |hdmi_tx_controller_wrapper         |1152    |198     |1368    |14      |0       |
+|        u_hdmi_tx_controller_wrapper          |hdmi_tx_controller_wrapper         |1163    |200     |1368    |14      |0       |
 |          u0_hdmi_tmds_encode                 |hdmi_tmds_encode                   |130     |30      |160     |0       |0       |
 |          u1_hdmi_tmds_encode                 |hdmi_tmds_encode                   |125     |30      |108     |0       |0       |
 |          u2_hdmi_tmds_encode                 |hdmi_tmds_encode                   |129     |30      |108     |0       |0       |
 |          u_hdmi_data_distribution            |hdmi_data_distribution             |2       |0       |43      |0       |0       |
 |          u_hdmi_island_data_assemble         |hdmi_island_data_assemble          |277     |0       |418     |0       |0       |
-|          u_hdmi_island_data_gen              |hdmi_island_data_gen               |297     |3       |374     |11      |0       |
-|            U_audio_sample_packet_2_channel   |audio_sample_packet_2_channel      |107     |3       |171     |11      |0       |
+|          u_hdmi_island_data_gen              |hdmi_island_data_gen               |308     |5       |374     |11      |0       |
+|            U_audio_sample_packet_2_channel   |audio_sample_packet_2_channel      |109     |5       |171     |11      |0       |
 |              u_w96_d1024_fifo                |w96_d1024_fifo                     |24      |0       |55      |11      |0       |
 |              u_BCH_32_24_encode              |BCH_32_24_encode                   |0       |0       |1       |0       |0       |
 |              u_BCH_64_56_encode              |BCH_64_56_encode                   |0       |0       |8       |0       |0       |
@@ -84,25 +84,25 @@ Report Hierarchy Area:
 |        u1_lane_lvds_8_1                      |abc_lane_lvds_10_1                 |10      |0       |12      |0       |0       |
 |        u2_lane_lvds_8_1                      |abc_lane_lvds_10_1                 |10      |0       |12      |0       |0       |
 |        u3_lane_lvds_8_1                      |abc_lane_lvds_10_1                 |2       |0       |5       |0       |0       |
-|      u_queue                                 |abc_video_axis_fifo                |3930    |12      |57      |0       |0       |
+|      u_queue                                 |abc_video_axis_fifo                |3928    |12      |57      |0       |0       |
 |    u_bright_rgb                              |abc_brightness_rgb                 |1       |0       |0       |0       |0       |
 |    u_brightness                              |abc_brightness_ctrl                |92      |12      |56      |0       |0       |
-|    u_osd                                     |ab_osd_overlay                     |1922    |936     |420     |11      |8       |
-|      u_engine                                |ab_osd_engine                      |1559    |854     |237     |9       |8       |
-|        u_digits                              |ab_osd_font_digits                 |107     |0       |0       |3       |0       |
-|        u_zh                                  |ab_osd_font_zh                     |53      |0       |0       |6       |0       |
-|      u_time                                  |ab_osd_clock                       |148     |19      |92      |0       |0       |
+|    u_osd                                     |ab_osd_overlay                     |1962    |915     |419     |11      |8       |
+|      u_engine                                |ab_osd_engine                      |1606    |838     |236     |9       |8       |
+|        u_digits                              |ab_osd_font_digits                 |125     |0       |0       |3       |0       |
+|        u_zh                                  |ab_osd_font_zh                     |78      |0       |0       |6       |0       |
+|      u_time                                  |ab_osd_clock                       |141     |14      |92      |0       |0       |
 |      u_wave                                  |abc_audio_waveform                 |201     |49      |91      |2       |0       |
 |    u_player                                  |abc_pcm_playback                   |58      |21      |36      |0       |0       |
 |    u_present                                 |ab_video_start                     |0       |0       |2       |0       |0       |
 |    u_vga_disp                                |vga_disp                           |78      |39      |71      |0       |0       |
-|  u_read                                      |frame_read                         |177     |46      |158     |2       |6       |
-|    u_blend                                   |ab_blend_word                      |50      |18      |26      |0       |6       |
-|  u_refresh                                   |ab_sdram_refresh_ctrl              |19      |3       |10      |0       |0       |
+|  u_read                                      |frame_read                         |177     |48      |158     |2       |6       |
+|    u_blend                                   |ab_blend_word                      |52      |20      |26      |0       |6       |
+|  u_refresh                                   |ab_sdram_refresh_ctrl              |21      |5       |10      |0       |0       |
 |  u_reload                                    |ab_reload_cdc                      |1       |0       |4       |0       |0       |
 |  u_sdr_as_ram                                |sdr_as_ram                         |93      |5       |422     |0       |0       |
 |    u1_init_ref                               |sdr_init_ref                       |21      |5       |81      |0       |0       |
 |    u2_wrrd                                   |sdr_wrrd                           |72      |0       |341     |0       |0       |
-|  u_switch                                    |img_switch_ctrl                    |155     |26      |98      |0       |0       |
-|  u_writer                                    |ab_bmp_sdram_writer                |292     |45      |165     |9       |0       |
+|  u_switch                                    |img_switch_ctrl                    |162     |26      |98      |0       |0       |
+|  u_writer                                    |ab_bmp_sdram_writer                |295     |49      |165     |9       |0       |
 +-------------------------------------------------------------------------------------------------------------------------------+

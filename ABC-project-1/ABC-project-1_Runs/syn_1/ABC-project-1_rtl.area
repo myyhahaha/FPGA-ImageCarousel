@@ -12,41 +12,41 @@ IO Statistics
   #inout                    0
 
 Gate Statistics
-#Basic gates            14880
-  #and                   3146
+#Basic gates            15008
+  #and                   3141
   #nand                     0
-  #or                    2542
+  #or                    2540
   #nor                      0
   #xor                    126
   #xnor                     0
   #buf                      0
-  #not                    676
+  #not                    692
   #bufif1                  33
-  #MX21                  2779
+  #MX21                  2899
   #FADD                     0
-  #DFF                   5578
+  #DFF                   5577
   #LATCH                    0
-#MACRO_ADD                526
+#MACRO_ADD                535
 #MACRO_EQ                 232
 #MACRO_MULT                29
-#MACRO_MUX               3365
+#MACRO_MUX               3354
 #MACRO_OTHERS              22
 
 Report Hierarchy Area:
 +----------------------------------------------------------------------------------------------------------+
 |Instance                                      |Module                             |gates  |seq    |macros |
 +----------------------------------------------------------------------------------------------------------+
-|top                                           |abc_hdmi_top                       |9302   |5578   |809    |
+|top                                           |abc_hdmi_top                       |9431   |5577   |818    |
 |  u_b_stream                                  |abc_sd_media                       |6855   |2212   |207    |
-|    sd                                        |sd_card_top                        |412    |183    |13     |
-|      sd_card_cmd_m0                          |sd_card_cmd                        |279    |49     |8      |
+|    sd                                        |sd_card_top                        |413    |183    |13     |
+|      sd_card_cmd_m0                          |sd_card_cmd                        |280    |49     |8      |
 |      sd_card_sec_read_write_m0               |sd_card_sec_read_write             |121    |90     |0      |
 |      spi_master_m0                           |spi_master                         |12     |44     |5      |
 |    u_audio_fifo                              |abc_pcm_fifo                       |51     |110    |7      |
 |    u_find                                    |abc_wav_find                       |2997   |339    |28     |
-|    u_images                                  |sd_bmp_stream_top                  |2506   |1199   |109    |
+|    u_images                                  |sd_bmp_stream_top                  |2505   |1199   |109    |
 |      bridge                                  |pixel_fifo_bridge                  |1      |0      |0      |
-|      reader                                  |fat32_bmp_reader                   |1695   |942    |79     |
+|      reader                                  |fat32_bmp_reader                   |1694   |942    |79     |
 |      stream                                  |bmp_pixel_stream                   |802    |255    |30     |
 |    u_music                                   |abc_wav_stream                     |859    |276    |46     |
 |    u_sectors                                 |abc_sd_sector_arbiter              |27     |105    |2      |
@@ -55,7 +55,7 @@ Report Hierarchy Area:
 |  u_clk_wize                                  |clk_wize                           |0      |0      |1      |
 |  u_fade                                      |ab_fade_ctrl                       |6      |35     |2      |
 |  u_fifo                                      |afifo_24x1024                      |34     |90     |6      |
-|  u_hdmi_top                                  |hdmi_top                           |1608   |2027   |477    |
+|  u_hdmi_top                                  |hdmi_top                           |1741   |2026   |486    |
 |    u3_hdmi_tx                                |abc_hdmi_audio_tx                  |423    |1433   |189    |
 |      u_acr                                   |abc_acr_calc                       |3      |47     |4      |
 |      u_axis                                  |abc_video_rgb_to_axis              |20     |40     |2      |
@@ -88,10 +88,10 @@ Report Hierarchy Area:
 |      u_queue                                 |abc_video_axis_fifo                |15     |57     |7      |
 |    u_bright_rgb                              |abc_brightness_rgb                 |0      |0      |4      |
 |    u_brightness                              |abc_brightness_ctrl                |44     |58     |7      |
-|    u_osd                                     |ab_osd_overlay                     |1107   |425    |259    |
-|      u_engine                                |ab_osd_engine                      |932    |242    |218    |
+|    u_osd                                     |ab_osd_overlay                     |1240   |424    |268    |
+|      u_engine                                |ab_osd_engine                      |1065   |241    |227    |
 |        u_digits                              |ab_osd_font_digits                 |18     |0      |1      |
-|        u_zh                                  |ab_osd_font_zh                     |27     |0      |1      |
+|        u_zh                                  |ab_osd_font_zh                     |40     |0      |1      |
 |      u_time                                  |ab_osd_clock                       |86     |92     |19     |
 |      u_wave                                  |abc_audio_waveform                 |89     |91     |19     |
 |    u_player                                  |abc_pcm_playback                   |21     |36     |4      |
@@ -105,5 +105,5 @@ Report Hierarchy Area:
 |    u1_init_ref                               |sdr_init_ref                       |19     |81     |1      |
 |    u2_wrrd                                   |sdr_wrrd                           |77     |382    |5      |
 |  u_switch                                    |img_switch_ctrl                    |95     |104    |9      |
-|  u_writer                                    |ab_bmp_sdram_writer                |232    |165    |26     |
+|  u_writer                                    |ab_bmp_sdram_writer                |230    |165    |26     |
 +----------------------------------------------------------------------------------------------------------+
