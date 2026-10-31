@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- HMAC is: e1f9f12cbad7f4edab0595bb186dc29779e5e53634461aced8638a6313a7558d -->
+<!-- HMAC is: 88c68a8d022e77e0d930b482717e10fd6b8112154ed39ee3c5d3d0c3e34840ed -->
 <All_Bram_Infos>
-    <Ucode>11110000</Ucode>
+    <Ucode>10011010</Ucode>
     <AL_PHY_BRAM>
         <INST_1>
             <rid>0X0004</rid>
@@ -881,15 +881,15 @@
             <width_a>18</width_a>
             <width_b>18</width_b>
             <logic_name>u_hdmi_top/u_osd/u_engine/u_zh/ramread0_syn_4</logic_name>
-            <logic_width>96</logic_width>
-            <logic_depth>256</logic_depth>
+            <logic_width>100</logic_width>
+            <logic_depth>512</logic_depth>
             <sub_bid_info>
                 <address_offset>0</address_offset>
                 <data_offset>0</data_offset>
-                <depth>256</depth>
+                <depth>512</depth>
                 <width>18</width>
                 <num_section>1</num_section>
-                <section_size>96</section_size>
+                <section_size>100</section_size>
                 <width_per_section>18</width_per_section>
                 <bytes_in_per_section>1</bytes_in_per_section>
                 <working_mode>
@@ -912,15 +912,15 @@
             <width_a>18</width_a>
             <width_b>18</width_b>
             <logic_name>u_hdmi_top/u_osd/u_engine/u_zh/ramread0_syn_4</logic_name>
-            <logic_width>96</logic_width>
-            <logic_depth>256</logic_depth>
+            <logic_width>100</logic_width>
+            <logic_depth>512</logic_depth>
             <sub_bid_info>
                 <address_offset>0</address_offset>
                 <data_offset>18</data_offset>
-                <depth>256</depth>
+                <depth>512</depth>
                 <width>18</width>
                 <num_section>1</num_section>
-                <section_size>96</section_size>
+                <section_size>100</section_size>
                 <width_per_section>18</width_per_section>
                 <bytes_in_per_section>1</bytes_in_per_section>
                 <working_mode>
@@ -943,15 +943,15 @@
             <width_a>18</width_a>
             <width_b>18</width_b>
             <logic_name>u_hdmi_top/u_osd/u_engine/u_zh/ramread0_syn_4</logic_name>
-            <logic_width>96</logic_width>
-            <logic_depth>256</logic_depth>
+            <logic_width>100</logic_width>
+            <logic_depth>512</logic_depth>
             <sub_bid_info>
                 <address_offset>0</address_offset>
                 <data_offset>36</data_offset>
-                <depth>256</depth>
+                <depth>512</depth>
                 <width>18</width>
                 <num_section>1</num_section>
-                <section_size>96</section_size>
+                <section_size>100</section_size>
                 <width_per_section>18</width_per_section>
                 <bytes_in_per_section>1</bytes_in_per_section>
                 <working_mode>
@@ -974,15 +974,15 @@
             <width_a>18</width_a>
             <width_b>18</width_b>
             <logic_name>u_hdmi_top/u_osd/u_engine/u_zh/ramread0_syn_4</logic_name>
-            <logic_width>96</logic_width>
-            <logic_depth>256</logic_depth>
+            <logic_width>100</logic_width>
+            <logic_depth>512</logic_depth>
             <sub_bid_info>
                 <address_offset>0</address_offset>
                 <data_offset>54</data_offset>
-                <depth>256</depth>
+                <depth>512</depth>
                 <width>18</width>
                 <num_section>1</num_section>
-                <section_size>96</section_size>
+                <section_size>100</section_size>
                 <width_per_section>18</width_per_section>
                 <bytes_in_per_section>1</bytes_in_per_section>
                 <working_mode>
@@ -1005,15 +1005,15 @@
             <width_a>18</width_a>
             <width_b>18</width_b>
             <logic_name>u_hdmi_top/u_osd/u_engine/u_zh/ramread0_syn_4</logic_name>
-            <logic_width>96</logic_width>
-            <logic_depth>256</logic_depth>
+            <logic_width>100</logic_width>
+            <logic_depth>512</logic_depth>
             <sub_bid_info>
                 <address_offset>0</address_offset>
                 <data_offset>72</data_offset>
-                <depth>256</depth>
+                <depth>512</depth>
                 <width>18</width>
                 <num_section>1</num_section>
-                <section_size>96</section_size>
+                <section_size>100</section_size>
                 <width_per_section>18</width_per_section>
                 <bytes_in_per_section>1</bytes_in_per_section>
                 <working_mode>
@@ -1029,29 +1029,29 @@
         <INST_34>
             <rid>0X0025</rid>
             <wid>0X0025</wid>
-            <is_debuggable>y</is_debuggable>
+            <is_debuggable>n</is_debuggable>
             <is_initialize>y</is_initialize>
             <model_type>AL_PHY_BRAM</model_type>
             <name>u_hdmi_top/u_osd/u_engine/u_zh/ramread0_syn_100</name>
-            <width_a>9</width_a>
-            <width_b>9</width_b>
+            <width_a>18</width_a>
+            <width_b>18</width_b>
             <logic_name>u_hdmi_top/u_osd/u_engine/u_zh/ramread0_syn_4</logic_name>
-            <logic_width>96</logic_width>
-            <logic_depth>256</logic_depth>
+            <logic_width>100</logic_width>
+            <logic_depth>512</logic_depth>
             <sub_bid_info>
                 <address_offset>0</address_offset>
                 <data_offset>90</data_offset>
-                <depth>256</depth>
-                <width>6</width>
+                <depth>512</depth>
+                <width>10</width>
                 <num_section>1</num_section>
-                <section_size>96</section_size>
-                <width_per_section>6</width_per_section>
+                <section_size>100</section_size>
+                <width_per_section>10</width_per_section>
                 <bytes_in_per_section>1</bytes_in_per_section>
                 <working_mode>
                     <address_step>1</address_step>
-                    <depth>1024</depth>
+                    <depth>512</depth>
                     <mode_type>159</mode_type>
-                    <width>9</width>
+                    <width>18</width>
                     <num_byte>1</num_byte>
                     <ecc>0</ecc>
                 </working_mode>
