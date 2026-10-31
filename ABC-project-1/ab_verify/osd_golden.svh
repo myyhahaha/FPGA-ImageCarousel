@@ -1,7 +1,7 @@
 // Untimed mathematical scoreboard. Glyph data comes from the raster assets,
 // independent of the synchronous packed ROM used by the design.
  reg[9:0]gold_wave[0:639];
- reg[3:0]gold_zh[0:4031],gold_digits[0:2639];
+ reg[3:0]gold_zh[0:10799],gold_digits[0:2639];
  initial begin
   $readmemh("ab_verify/results/osd_wave_levels.hex",gold_wave);
   $readmemh("ab_verify/results/osd_zh_pixels.hex",gold_zh);
@@ -16,11 +16,11 @@
  begin gold_coverage=v==15?16:v;end endfunction
  function[5:0]gold_name;input integer pos,y;integer glyph,col;reg dot;
  begin
-  pos=pos%292;glyph=pos/28;col=pos%28;
-  dot=pos>=242 && pos<=246 && y>=573 && y<=577 && !((pos==242 || pos==246)&&(y==573 || y==577));
+  pos=pos%432;glyph=pos/24;col=pos%24;
+  dot=pos>=390 && pos<=394 && y>=573 && y<=577 && !((pos==390 || pos==394)&&(y==573 || y==577));
   gold_name=0;
   if(dot)gold_name=6'd48;
-  else if(glyph<7 && col<24)gold_name=gold_coverage(gold_zh[glyph*576+(y-563)*24+col]);
+  else gold_name=gold_coverage(gold_zh[glyph*600+(y-563)*25+col]);
  end endfunction
  function gold_caption;input[7:0]ch;input integer row,col;reg[34:0]bits;
  begin
@@ -33,6 +33,7 @@
    "U":bits=35'b10001_10001_10001_10001_10001_10001_01110;
    "N":bits=35'b10001_11001_11001_10101_10011_10011_10001;
    "I":bits=35'b11111_00100_00100_00100_00100_00100_11111;
+   "L":bits=35'b10000_10000_10000_10000_10000_10000_11111;
    default:bits=0;
   endcase
   gold_caption=bits[34-row*5-col];
@@ -59,8 +60,8 @@
    if(y>=551 && y<558)begin
     ink=24'h8f999e;
     for(n=0;n<2;n=n+1)begin
-     left=n==0?100:552;caption=n==0?64'h5445414d20202020:"RUN TIME";
-     for(slot=0;slot<(n==0?4:8);slot=slot+1)begin
+     left=n==0?100:552;caption=n==0?64'h5449544c45202020:"RUN TIME";
+     for(slot=0;slot<(n==0?5:8);slot=slot+1)begin
       col=x-left-slot*6;
       if(col>=0 && col<5 && gold_caption(caption[(7-slot)*8+:8],y-551,col))a=10;
      end

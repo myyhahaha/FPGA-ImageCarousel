@@ -13,7 +13,7 @@ module tb_osd_clock;
  end endfunction
  always @(negedge clk)if(reset_n)frame_blank=(ticks%17==0);
  always @(posedge clk)if(reset_n && enable)begin
-  if(frame_blank)begin ref_bcd=as_bcd(seconds);ref_scroll=(ref_scroll+2)%1168;frames=frames+1;end
+  if(frame_blank)begin ref_bcd=as_bcd(seconds);ref_scroll=(ref_scroll+2)%1728;frames=frames+1;end
   ticks=ticks+1;if(ticks%4==0 && seconds<3599999)seconds=seconds+1;
   #1;
   if(dut.elapsed_bcd!==as_bcd(seconds) || scroll!==ref_scroll || bcd!==ref_bcd)

@@ -12,17 +12,16 @@ caps={
 'R':['11110','10001','10001','11110','10100','10010','10001'],
 'U':['10001','10001','10001','10001','10001','10001','01110'],
 'N':['10001','11001','11001','10101','10011','10011','10001'],
-'I':['11111','00100','00100','00100','00100','00100','11111']}
+'I':['11111','00100','00100','00100','00100','00100','11111'],
+'L':['10000','10000','10000','10000','10000','10000','11111']}
 def rgb(v):return ((v>>16)&255,(v>>8)&255,v&255)
 def packed(c):return c[0]<<16|c[1]<<8|c[2]
 def mix(bg,fg,a):return tuple((b*(16-a)+f*a+8)//16 for b,f in zip(bg,fg))
 def cov(v):return 16 if v==15 else v
 def name_cov(pos,y):
-    pos%=292
-    if 242<=pos<=246 and 573<=y<=577 and not(pos in (242,246) and y in (573,577)):return 16,True
-    index,col=divmod(pos,28)
-    if index<7 and col<24:return cov(fonts['zh'][index][y-563][col]),False
-    return 0,False
+    pos%=432
+    if 390<=pos<=394 and 573<=y<=577 and not(pos in (390,394) and y in (573,577)):return 16,True
+    return cov(fonts['title_pixels'][y-563][pos]),False
 wave_levels=[int(s,16) for s in (base/'results/osd_wave_levels.hex').read_text().split()]
 
 def render(x,y,bg,scroll,bcd,de=True):
@@ -50,7 +49,7 @@ def render(x,y,bg,scroll,bcd,de=True):
     ink=rgb(0xd8dedb);a=0
     if 551<=y<558:
         ink=rgb(0x8f999e)
-        for left,text in [(100,'TEAM'),(552,'RUN TIME')]:
+        for left,text in [(100,'TITLE'),(552,'RUN TIME')]:
             slot,col=divmod(x-left,6)
             if 0<=slot<len(text) and col<5 and text[slot]!=' ' and caps[text[slot]][y-551][col]=='1':a=10
     if 100<=x<496 and 563<=y<587:
@@ -76,7 +75,7 @@ def make_vectors():
     for name,key in [('osd_zh_pixels.hex','zh'),('osd_digit_pixels.hex','digits')]:
         (out/name).write_text(''.join(f'{v:x}\n' for glyph in fonts[key] for row in glyph for v in row))
     # All four fractional positions, period wrap, carries, and high hour digits.
-    cases=[(0,0),(1,0x0000009),(2,0x0000059),(3,0x0005959),(111,0x0010000),(1166,0x1000000),(1167,0x9995959),(0,0x0071234)]
+    cases=[(0,0),(1,0x0000009),(2,0x0000059),(3,0x0005959),(111,0x0010000),(1726,0x1000000),(1727,0x9995959),(0,0x0071234)]
     count=0
     with (out/'osd_vectors.hex').open('w') as f:
         for scroll,bcd in cases:

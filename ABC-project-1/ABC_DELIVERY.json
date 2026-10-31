@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-30",
+  "date": "2026-10-31",
   "project": "ABC-project-1.al",
   "top_module": "abc_hdmi_top",
   "renames": {
@@ -71,8 +71,8 @@
     "RTL_1/ip/clk_sdr.v": "396d3874985c82499f8ee712798780f6992105b929eb7c21256fb96154516f86",
     "RTL_1/ip/clk_wize.v": "17f0f7f12323b8eb5aa8565d1cdbe020e8c9ace7a6f992e3b51107f2fe7402e8",
     "RTL_1/a_core/TMDSEncoder.v": "cb8758ada928f95efbcdb0817b86e3d8ce5597fb6d137a0e544701aee5902dff",
-    "RTL_1/a_core/ab_osd_overlay.v": "da653a2721f8d6784cbc607255df3acdcbe9aa379426ed1de140570a16841c12",
-    "RTL_1/a_core/ab_osd_font_rom.v": "095def93ac5b61f799dd2d1e384b66d52cd1259f33af87f31008c40a38f1bf4c",
+    "RTL_1/a_core/ab_osd_overlay.v": "68c9ddb702368e9535f9540d9b49b8410b86fe17d31b84c74068e88dbf100b51",
+    "RTL_1/a_core/ab_osd_font_rom.v": "18e12a0e8b77241b40100861a2bc46327f2249d32f5af660d0feed619b3428a7",
     "rtl/abc_sd_sector_arbiter.v": "b45a2ae1b0396f2c04ad2d1cf994b1e81363819f9fcaaf92f9d5567f53cb9a0b",
     "rtl/abc_wav_find.v": "18aed75dfa82f955d63ac883a578f74759d613238a18710b7d03a096137a9c7d",
     "rtl/abc_wav_stream.v": "61f4465a98bc13ed59ff5ed6009eea01218a1add309f940ec814e0bfe69ecf47",
@@ -95,8 +95,8 @@
     "abc_hdmi.sdc": "e95318c0f51e75ea763915b8cc641c61669bb7bca03ee01eb1af888671aee4b4",
     "RTL_1/a_core/abc_brightness.v": "c9dd76d76f158a7189ae9cb60f4c3b0b3f45112db82d221c8efaefa96078c010"
   },
-  "bit_sha256": "5eddd52251460dc52666ef298c840a1a068afe541f5a1b479aff1f0e9e6e81cd",
-  "setup_slack_ns": 0.159,
+  "bit_sha256": "2c5bfadf0145b76768f6192a4a3f86adccd8a1b2a2c80187bfcf69bb413a6f0d",
+  "setup_slack_ns": 0.811,
   "hold_slack_ns": 0.003,
   "music_filename": "MUSIC.WAV",
   "backup": "C:\\Users\\m_yy\\Documents\\Codex\\2026-10-27\\k1k2\\outputs\\ABC-project-1_before_rename_20261029.zip",
@@ -174,7 +174,7 @@
     "SW4": 8
   },
   "timing_backup": "C:\\Users\\m_yy\\Documents\\Codex\\2026-10-27\\k1k2\\outputs\\ABC-project-1_before_sw_timing_20261029.zip",
-  "direct_desktop_bit": "C:\\Users\\m_yy\\Desktop\\ABC-preview-return-fix.bit",
+  "direct_desktop_bit": "C:\\Users\\m_yy\\Desktop\\ABC-project-1.bit",
   "cache_images": 8,
   "cache_bytes": 7680000,
   "sdram_bytes": 8388608,
@@ -237,5 +237,18 @@
     "unlock": "final return-to-slot0 fade ACK and all eight valid",
     "previous_board_report": "stopped on IMAGE8; all controls locked; ticker/audio continued",
     "previous_board_fault_reproduced_in_simulation": false
+  },
+  "title_revision": {
+    "caption": "TITLE",
+    "text": "基于安路 EG4S20 的HDMI 多媒体播放系统",
+    "ticker_period_pixels": 432,
+    "pixels_per_video_frame": 0.5,
+    "backup": "C:\\Users\\m_yy\\Documents\\Codex\\2026-10-27\\k1k2\\outputs\\ABC-project-1_before_title_20261031.zip",
+    "changed_active_files": [
+      "RTL_1/a_core/ab_osd_font_rom.v",
+      "RTL_1/a_core/ab_osd_overlay.v"
+    ],
+    "previous_version_board_and_flash_confirmed_by_user": true,
+    "current_revision_board_test": false
   }
 }

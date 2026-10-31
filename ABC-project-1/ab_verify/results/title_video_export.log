@@ -1,0 +1,426 @@
+============================================================
+   Tang Dynasty, V6.2.168116
+   Copyright (c) 2012-2025 Anlogic Inc.
+   Executable = C:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/bin/td_commands_prompt.exe
+   Built at =   16:32:07 Jun 12 2025
+   Run by =     m_yy
+   Run Date =   Sat Oct 31 18:35:51 2026
+
+   Run on =     LAPTOP-MUATQ0HL
+============================================================
+RUN-1002 : start command "import_device eagle_s20.db -package EG4S20BG256"
+RUN-1001 : Using default speed grade: NA
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/S11  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicate  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicate  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+RUN-1002 : start command "open_project ABC-project-1.prj"
+RUN-1002 : start command "commit_param -step design"
+RUN-1001 : Print Global Property
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   Parameters   |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   enable_seed  |    off     |       off        |        
+RUN-1001 :     message    |  standard  |     standard     |        
+RUN-1001 :   qor_monitor  |     on     |        on        |        
+RUN-1001 :   syn_ip_flow  |    off     |       off        |        
+RUN-1001 :     thread     |    auto    |       auto       |        
+RUN-1001 : --------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :       Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :   default_reg_initial  |    auto    |       auto       |        
+RUN-1001 :    hdl_warning_level   |   normal   |      normal      |        
+RUN-1001 : ----------------------------------------------------------------
+HDL-1007 : analyze verilog file ../../RTL_1/a_core/global_def.v
+HDL-1007 : analyze verilog file ../../RTL_1/a_core/ab_osd_font_rom.v
+HDL-1007 : analyze verilog file ../../RTL_1/a_core/ab_osd_overlay.v
+HDL-1007 : analyze verilog file ../../rtl/fat32_bmp_reader.v
+HDL-5373 WARNING: identifier 'bpb_root_cluster' is used before its declaration in ../../rtl/fat32_bmp_reader.v(38)
+HDL-1007 : analyze verilog file ../../rtl/sd_card_cmd.v
+HDL-1007 : analyze verilog file ../../rtl/sd_card_sec_read_write.v
+HDL-1007 : analyze verilog file ../../rtl/sd_card_top.v
+HDL-1007 : analyze verilog file ../../rtl/spi_master.v
+HDL-1007 : analyze verilog file ../../rtl/bmp_pixel_stream.v
+HDL-1007 : analyze verilog file ../../rtl/pixel_fifo_bridge.v
+HDL-1007 : analyze verilog file ../../rtl/sd_bmp_stream_top.v
+HDL-1007 : analyze verilog file ../../RTL_1/a_core/afifo_24x256.v
+HDL-1007 : analyze verilog file ../../RTL_1/a_core/frame_read.v
+HDL-1007 : analyze verilog file ../../RTL_1/a_core/hdmi_top.v
+HDL-1007 : analyze verilog file ../../RTL_1/a_core/vga_disp.v
+HDL-1007 : analyze verilog file ../../RTL_1/bridge/ab_bmp_sdram_writer.v
+HDL-1007 : analyze verilog file ../../RTL_1/bridge/abc_hdmi_top.v
+HDL-1007 : analyze verilog file ../../RTL_1/enc_file/sdr_as_ram.enc.v
+Copyright (c) 1998-2019 The OpenSSL Project.  All rights reserved.
+This product includes software developed by the OpenSSL Project
+for use in the OpenSSL Toolkit (http://www.openssl.org/)
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+All rights reserved.
+This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)
+HDL-1007 : back to file '../../RTL_1/enc_file/sdr_as_ram.enc.v' in ../../RTL_1/enc_file/sdr_as_ram.enc.v(45)
+HDL-1007 : analyze verilog file ../../RTL_1/enc_file/sdr_init_ref.enc.v
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in ../../RTL_1/enc_file/sdr_init_ref.enc.v(57)
+HDL-1007 : back to file '../../RTL_1/enc_file/sdr_init_ref.enc.v' in ../../RTL_1/enc_file/sdr_init_ref.enc.v(148)
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in ../../RTL_1/enc_file/sdr_init_ref.enc.v(47)
+HDL-1007 : analyze verilog file ../../RTL_1/enc_file/sdr_wrrd.enc.v
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in ../../RTL_1/enc_file/sdr_wrrd.enc.v(283)
+HDL-1007 : back to file '../../RTL_1/enc_file/sdr_wrrd.enc.v' in ../../RTL_1/enc_file/sdr_wrrd.enc.v(19)
+HDL-1007 : analyze verilog file ../../RTL_1/ip/clk_sdr.v
+HDL-1007 : undeclared symbol 'open', assumed default net type 'wire' in ../../RTL_1/ip/clk_sdr.v(60)
+HDL-1007 : analyze verilog file ../../RTL_1/ip/clk_wize.v
+HDL-1007 : undeclared symbol 'open', assumed default net type 'wire' in ../../RTL_1/ip/clk_wize.v(72)
+HDL-1007 : analyze verilog file ../../rtl/abc_sd_sector_arbiter.v
+HDL-1007 : analyze verilog file ../../rtl/abc_wav_find.v
+HDL-1007 : analyze verilog file ../../rtl/abc_wav_stream.v
+HDL-1007 : analyze verilog file ../../rtl/abc_sd_media.v
+HDL-1007 : analyze verilog file ../../RTL_1/abc_audio/abc_pcm_fifo.v
+HDL-1007 : analyze verilog file ../../RTL_1/abc_audio/abc_pcm_playback.v
+HDL-1007 : analyze verilog file ../../RTL_1/abc_audio/abc_audio_waveform.v
+HDL-1007 : analyze verilog file ../../RTL_1/abc_audio/abc_video_axis_fifo.v
+HDL-1007 : analyze verilog file ../../RTL_1/abc_audio/abc_hdmi_audio_tx.v
+HDL-1007 : analyze verilog file ../../RTL_1/abc_audio/abc_acr_calc.v
+HDL-1007 : analyze verilog file ../../RTL_1/abc_audio/abc_video_rgb_to_axis.v
+HDL-1007 : analyze verilog file ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(2614)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(2716)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(2724)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(4936)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(5989)
+HDL-1007 : back to file '../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v' in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(77)
+HDL-1007 : analyze verilog file ../../RTL_1/abc_hdmi14b/abc_hdmi_phy_wrapper.v
+HDL-1007 : analyze verilog file ../../RTL_1/abc_hdmi14b/abc_lane_lvds_10_1.v
+HDL-1007 : analyze verilog file ../../RTL_1/a_core/abc_brightness.v
+PRJ-1401 : Successfully analyzed 37 source files.
+RUN-1002 : start command "elaborate -top hdmi_top"
+HDL-1007 : elaborate module hdmi_top in ../../RTL_1/a_core/hdmi_top.v(8)
+HDL-1007 : elaborate module vga_disp in ../../RTL_1/a_core/vga_disp.v(19)
+HDL-1007 : elaborate module ab_video_start in ../../RTL_1/a_core/ab_osd_overlay.v(48)
+HDL-1007 : elaborate module abc_brightness_ctrl in ../../RTL_1/a_core/abc_brightness.v(4)
+HDL-1007 : elaborate module abc_brightness_rgb in ../../RTL_1/a_core/abc_brightness.v(47)
+HDL-1007 : elaborate module abc_pcm_playback in ../../RTL_1/abc_audio/abc_pcm_playback.v(3)
+HDL-1007 : elaborate module ab_osd_overlay in ../../RTL_1/a_core/ab_osd_overlay.v(220)
+HDL-1007 : elaborate module abc_audio_waveform in ../../RTL_1/abc_audio/abc_audio_waveform.v(4)
+HDL-1007 : extracting RAM for identifier 'history' in ../../RTL_1/abc_audio/abc_audio_waveform.v(8)
+HDL-1007 : extracting RAM for identifier 'snapshot' in ../../RTL_1/abc_audio/abc_audio_waveform.v(8)
+HDL-1007 : elaborate module ab_osd_clock in ../../RTL_1/a_core/ab_osd_overlay.v(3)
+HDL-1007 : elaborate module ab_osd_engine in ../../RTL_1/a_core/ab_osd_overlay.v(62)
+HDL-1007 : elaborate module ab_osd_font_zh in ../../RTL_1/a_core/ab_osd_font_rom.v(3)
+HDL-1007 : extracting RAM for identifier 'rom' in ../../RTL_1/a_core/ab_osd_font_rom.v(4)
+HDL-5314 WARNING: net 'rom' does not have a driver in ../../RTL_1/a_core/ab_osd_font_rom.v(4)
+HDL-1007 : elaborate module ab_osd_font_digits in ../../RTL_1/a_core/ab_osd_font_rom.v(521)
+HDL-1007 : extracting RAM for identifier 'rom' in ../../RTL_1/a_core/ab_osd_font_rom.v(522)
+HDL-5314 WARNING: net 'rom' does not have a driver in ../../RTL_1/a_core/ab_osd_font_rom.v(522)
+HDL-1007 : elaborate module abc_hdmi_audio_tx in ../../RTL_1/abc_audio/abc_hdmi_audio_tx.v(3)
+HDL-1007 : elaborate module abc_video_rgb_to_axis(HACTIVE=800) in ../../RTL_1/abc_audio/abc_video_rgb_to_axis.v(14)
+HDL-1007 : elaborate module abc_video_axis_fifo in ../../RTL_1/abc_audio/abc_video_axis_fifo.v(3)
+HDL-1007 : extracting RAM for identifier 'mem' in ../../RTL_1/abc_audio/abc_video_axis_fifo.v(7)
+HDL-1007 : elaborate module abc_acr_calc in ../../RTL_1/abc_audio/abc_acr_calc.v(15)
+HDL-1007 : elaborate module hdmi_1_4b_transmitter_core_wrapper(HTOTAL=1056,HSA=128,HFP=40,HBP=88,HACTIVE=800,VTOTAL=628,VSA=4,VFP=1,VBP=23,VACTIVE=600,VIDEO_TPG="Disable",VIDEO_VIC=0,IIC_SCL_DIV=250) in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(2)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(91)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(137)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(208)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(285)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(396)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(803)
+HDL-1007 : elaborate module EG_LOGIC_RAMFIFO(DATA_WIDTH=11,ADDR_WIDTH=10,IMPLEMENT="9K") in C:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\arch/eagle_macro.v(750)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(1338)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(1480)
+HDL-1007 : elaborate module EG_LOGIC_RAMFIFO(DATA_WIDTH=9,ADDR_WIDTH=10,IMPLEMENT="9K") in C:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\arch/eagle_macro.v(750)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(2012)
+HDL-1007 : port '**' remains unconnected for this instance in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(2733)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(2403)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(2842)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(2939)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(3138)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(3177)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(3511)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(3666)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(3730)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(3860)
+HDL-5007 WARNING: actual bit length ** differs from formal bit length *** for port '**' in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(3307)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(3949)
+HDL-5007 WARNING: actual bit length ** differs from formal bit length *** for port '**' in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(3318)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(4034)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(4127)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(4285)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(4586)
+HDL-1007 : elaborate module EG_LOGIC_RAMFIFO(DATA_WIDTH=96,ADDR_WIDTH=10,IMPLEMENT="9K") in C:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\arch/eagle_macro.v(750)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(5534)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(5657)
+HDL-1007 : elaborate module EG_LOGIC_RAMFIFO(DATA_WIDTH=24,ADDR_WIDTH=10,IMPLEMENT="9K") in C:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\arch/eagle_macro.v(750)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(6273)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(6501)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(6575)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(6924)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(6994)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(6994)
+HDL-1007 : elaborate module ** in ../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(6994)
+HDL-1007 : elaborate module abc_hdmi_phy_wrapper in ../../RTL_1/abc_hdmi14b/abc_hdmi_phy_wrapper.v(3)
+HDL-1007 : elaborate module abc_lane_lvds_10_1 in ../../RTL_1/abc_hdmi14b/abc_lane_lvds_10_1.v(4)
+HDL-1007 : elaborate module EG_LOGIC_ODDR in C:\Anlogic\TD_6.2.1_Engineer_6.2.168.116\arch/eagle_macro.v(66)
+HDL-5001 WARNING: Contains anonymous inst(s) and/or net(s) that have not been renamed
+HDL-1200 : Current top model is hdmi_top
+HDL-1100 : Inferred 5 RAMs.
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file C:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/license/Anlogic.lic
+SYN-1001 : Stage 1 | Optimize RTL
+SYN-1001 : Stage 1.1 | Check Design Sanity
+SYN-1001 : End Stage 1.1 | Check Design Sanity; Time: 0.004859s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (321.5%); Memory(MB): used = 162, reserved = 153, peak = 162;
+
+SYN-1079 : finish stage Check Design Sanity. Total instances: 18122, Total nets: 40882.
+
+SYN-1001 : Stage 1.2 | Initialize Design
+SYN-1001 : End Stage 1.2 | Initialize Design; Time: 0.498743s wall, 0.484375s user + 0.015625s system = 0.500000s CPU (100.3%); Memory(MB): used = 163, reserved = 153, peak = 163;
+
+SYN-1079 : finish stage Initialize Design. Total instances: 3165, Total nets: 22707.
+
+SYN-1001 : Stage 1.3 | Flatten Module
+SYN-1011 : Flatten model hdmi_top
+SYN-1001 : End Stage 1.3 | Flatten Module; Time: 0.092964s wall, 0.093750s user + 0.000000s system = 0.093750s CPU (100.8%); Memory(MB): used = 164, reserved = 154, peak = 164;
+
+SYN-1079 : finish stage Flatten Module. Total instances: 4884, Total nets: 19590.
+
+SYN-1001 : Stage 1.4 | Uniform Instance
+SYN-5025 WARNING: Using 0 for all undriven pins and nets
+SYN-1001 : End Stage 1.4 | Uniform Instance; Time: 0.018761s wall, 0.015625s user + 0.000000s system = 0.015625s CPU (83.3%); Memory(MB): used = 164, reserved = 163, peak = 164;
+
+SYN-1079 : finish stage Uniform Instance. Total instances: 3228, Total nets: 17932.
+
+SYN-1001 : Stage 1.5 | Optimize Design
+SYN-1001 : Optimize 1 less-than instances
+SYN-1001 : Optimize 21 less-than instances
+SYN-1032 : 17011/312 useful/useless nets, 3072/57 useful/useless insts
+SYN-1001 : Bypass 1 mux instances
+SYN-1021 : Optimized 4 onehot mux instances.
+SYN-1021 : Optimized 1 onehot mux instances.
+SYN-1021 : Optimized 1 onehot mux instances.
+SYN-1021 : Optimized 4 onehot mux instances.
+SYN-1016 : Merged 372 instances.
+SYN-1025 : Merged 3 RAM ports.
+SYN-1027 : Infer Logic DRAM(u3_hdmi_tx/u_queue/ramread0_syn_4) read 1024x26, write 1024x26
+SYN-1025 : Merged 1 RAM ports.
+SYN-1026 : Infer Logic BRAM(u_osd/u_wave/ramread0_syn_46)
+	 port mode: single dual port
+	 port a size: 1024 x 10	 write mode: NORMAL
+	 port b size: 1024 x 10	 write mode: READBEFOREWRITE
+SYN-1025 : Merged 1 RAM ports.
+SYN-1026 : Infer Logic BRAM(u_osd/u_wave/ramread1_syn_46)
+	 port mode: single dual port
+	 port a size: 1024 x 10	 write mode: NORMAL
+	 port b size: 1024 x 10	 write mode: READBEFOREWRITE
+SYN-1023 : Infer 1 Logic DRAMs, 4 Logic BRAMs.
+SYN-1016 : Merged 2514 instances.
+SYN-1001 : End Stage 1.5 | Optimize Design; Time: 0.789941s wall, 0.750000s user + 0.015625s system = 0.765625s CPU (96.9%); Memory(MB): used = 183, reserved = 177, peak = 183;
+
+SYN-1079 : finish stage Optimize Design. Total instances: 6669, Total nets: 8334.
+
+SYN-1001 : Stage 1.6 | Optimize Iteratively
+SYN-1019 : Optimized 4 mux instances.
+SYN-1014 : Optimize round 1
+SYN-1044 : Optimized 119 inv instances.
+SYN-1017 : Remove 20 const input seq instances
+SYN-1019 : Optimized 27 mux instances.
+SYN-1020 : Optimized 504 distributor mux.
+SYN-1001 : Optimize 61 less-than instances
+SYN-1019 : Optimized 3 mux instances.
+SYN-2595 : bram inst: u_osd/u_wave/ramread0_syn_46 is set to PDPW/SP from DP for resource saving
+SYN-2595 : bram inst: u_osd/u_wave/ramread1_syn_46 is set to PDPW/SP from DP for resource saving
+SYN-1016 : Merged 1426 instances.
+SYN-1015 : Optimize round 1, 3126 better
+SYN-1014 : Optimize round 2
+SYN-1044 : Optimized 14 inv instances.
+SYN-1017 : Remove 2 const input seq instances
+SYN-1019 : Optimized 76 mux instances.
+SYN-1020 : Optimized 3 distributor mux.
+SYN-1016 : Merged 124 instances.
+SYN-1015 : Optimize round 2, 609 better
+SYN-3010 : Optimized 219 DFF(s)
+SYN-1014 : Optimize round 1
+SYN-1017 : Remove 1 const input seq instances
+SYN-1020 : Optimized 7 distributor mux.
+SYN-1019 : Optimized 2 mux instances.
+SYN-1001 : Optimize constant input of 1 erams.
+SYN-1016 : Merged 28 instances.
+SYN-1015 : Optimize round 1, 99 better
+SYN-1014 : Optimize round 2
+SYN-1044 : Optimized 1 inv instances.
+SYN-1020 : Optimized 2 distributor mux.
+SYN-2593 : bram inst: u_osd/u_wave/ramread0_syn_46 will be optimized to a new one with A-width 9 due to unused data out
+SYN-1001 : Optimize constant input of 1 erams.
+SYN-1016 : Merged 2 instances.
+SYN-1015 : Optimize round 2, 8 better
+SYN-1014 : Optimize round 3
+SYN-2593 : bram inst: u_osd/u_wave/ramread1_syn_46 will be optimized to a new one with A-width 9 due to unused data out
+SYN-1015 : Optimize round 3, 1 better
+SYN-1014 : Optimize round 4
+SYN-1015 : Optimize round 4, 0 better
+SYN-1001 : End Stage 1.6 | Optimize Iteratively; Time: 2.606020s wall, 2.421875s user + 0.093750s system = 2.515625s CPU (96.5%); Memory(MB): used = 221, reserved = 216, peak = 227;
+
+SYN-1079 : finish stage Optimize Iteratively. Total instances: 5545, Total nets: 7044.
+
+SYN-1001 : Stage 1.7 | Check Design
+SYN-1001 : End Stage 1.7 | Check Design; Time: 0.000715s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%); Memory(MB): used = 221, reserved = 216, peak = 227;
+
+SYN-1079 : finish stage Check Design. Total instances: 5545, Total nets: 7044.
+
+SYN-1001 : End Stage 1 | Optimize RTL; Time: 4.013199s wall, 3.781250s user + 0.125000s system = 3.906250s CPU (97.3%); Memory(MB): used = 221, reserved = 216, peak = 227;
+
+SYN-1079 : finish stage Optimize RTL. Total instances: 5545, Total nets: 7044.
+
+RUN-1003 : finish command "optimize_rtl" in  4.020747s wall, 3.781250s user + 0.125000s system = 3.906250s CPU (97.2%)
+
+RUN-1004 : used memory is 221 MB, reserved memory is 216 MB, peak memory is 227 MB
+RUN-1002 : start command "optimize_gate -macrosim ../hdmi_macro.v -mapsim ../hdmi_map.v"
+RUN-1001 : Open license file C:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/license/Anlogic.lic
+SYN-1001 : Stage 2 | Optimize Gate
+SYN-1001 : Stage 2.1 | Map Reg
+SYN-1001 : End Stage 2.1 | Map Reg; Time: 0.097850s wall, 0.062500s user + 0.031250s system = 0.093750s CPU (95.8%); Memory(MB): used = 220, reserved = 216, peak = 227;
+
+SYN-1079 : finish stage Map Reg. Total instances: 5545, Total nets: 7044.
+
+SYN-1001 : Stage 2.2 | Map IO
+SYN-2001 : Map 129 IOs to PADs of model 'hdmi_top'
+SYN-1001 : End Stage 2.2 | Map IO; Time: 0.084351s wall, 0.046875s user + 0.031250s system = 0.078125s CPU (92.6%); Memory(MB): used = 221, reserved = 216, peak = 227;
+
+SYN-1001 : Stage 2.3 | Map Macro
+RUN-1002 : start command "update_pll_param -module hdmi_top"
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2541 : Logic Ram FIFO "u3_hdmi_tx/u_core/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/U_audio_sample_packet_2_channel/u_w96_d1024_fifo/u_logic_ramfifo"
+SYN-2541 : Logic Ram FIFO "u3_hdmi_tx/u_core/u_hdmi_tx_controller_wrapper/u_video_axi_stream_receiver/u_w24_d1024_fifo/u_logic_ramfifo"
+SYN-6562 WARNING: The init value of "u3_hdmi_tx/u_core/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/U_audio_sample_packet_2_channel/u_w96_d1024_fifo/u_logic_ramfifo_syn_497(../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(0))" will be ignored since gate eram_init is set to off
+SYN-6562 WARNING: The init value of "u3_hdmi_tx/u_core/u_hdmi_tx_controller_wrapper/u_video_axi_stream_receiver/u_w24_d1024_fifo/u_logic_ramfifo_syn_353(../../RTL_1/abc_hdmi14b/abc_hdmi_1_4b_transmitter_core_wrapper.enc.v(0))" will be ignored since gate eram_init is set to off
+SYN-2571 : Map 15 macro multiplier
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1016 : Merged 65 instances.
+SYN-2571 : Optimize after map_dsp, round 1, 65 better
+SYN-2571 : Optimize after map_dsp, round 2
+SYN-2571 : Optimize after map_dsp, round 2, 0 better
+SYN-1001 : Throwback 61 control mux instances
+SYN-1001 : Generate 57 bigger adders
+SYN-1001 : Optimize 76 adders
+SYN-1001 : Convert 12 adder
+SYN-1001 : Optimize 6 less-than instances
+SYN-2501 : Optimize round 1
+SYN-1016 : Merged 229 instances.
+SYN-2501 : Optimize round 1, 868 better
+SYN-2501 : Optimize round 2
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Optimize round 1
+SYN-1016 : Merged 1 instances.
+SYN-2501 : Optimize round 1, 2 better
+SYN-2501 : Optimize round 2
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 333 macro adder(s)
+SYN-1019 : Optimized 154 mux instances.
+SYN-1016 : Merged 659 instances.
+SYN-1001 : End Stage 2.3 | Map Macro; Time: 0.829689s wall, 0.703125s user + 0.109375s system = 0.812500s CPU (97.9%); Memory(MB): used = 237, reserved = 223, peak = 237;
+
+SYN-1079 : finish stage Map Macro. Total instances: 12034, Total nets: 14508.
+
+RUN-1002 : start command "write_verilog ../hdmi_macro.v"
+HDL-1201 : write out verilog file ../hdmi_macro.v
+SYN-1001 : Stage 2.4 | Map Gate
+SYN-2581 : Mapping with K=5, #lut = 3543 (3.47), #lev = 6 (2.61), #crit_level = 0
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=5, #lut = 3543 (3.47), #lev = 6 (2.61), #crit_level = 0
+SYN-3001 : Logic optimization opt = 0.56 sec, map = 0.26 sec, post map opt = 0.91 sec.
+SYN-3001 : Mapper removed 1 lut buffers
+SYN-1001 : End Stage 2.4 | Map Gate; Time: 2.069511s wall, 1.953125s user + 0.062500s system = 2.015625s CPU (97.4%); Memory(MB): used = 265, reserved = 259, peak = 265;
+
+RUN-1002 : start command "write_verilog ../hdmi_map.v"
+HDL-1201 : write out verilog file ../hdmi_map.v
+SYN-1001 : Packing model "hdmi_top" ...
+SYN-4010 : Pack lib has 58 rtl pack models with 26 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 2179 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 83 carry chain into lslice
+SYN-4007 : Packing 1651 adder to BLE ...
+SYN-4008 : Packed 1651 adder and 15 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4013 : Packed 448 DRAM and 0 SEQ.
+RUN-1002 : start command "report_qor -step gate -file gate.qor"
+RUN-1002 : start command "start_timer"
+-----------------------------------------------------------
+| QoR metrics               |         value               |
+-----------------------------------------------------------
+| Timing                    |                             |
+|     Setup WNS             |        -3580                |
+|     Setup TNS             |       -16180                |
+|     Num of violated S-EP  |            5                |
+|     Hold WNS              |          471                |
+|     Hold TNS              |            0                |
+|     Num of violated H-EP  |            0                |
+-----------------------------------------------------------
+| Utilization               |                             |
+|     #registers            |         2164                |
+|     #luts                 |         3543                |
+|     #lut1                 |           54                |
+|     #lut1(~A)             |           54                |
+|     #slices               |         2502                |
+|     slices percentage     |       25.53%                |
+|     #RAMs                 |           25                |
+|     #DSPs                 |            8                |
+|     #f7mux                |        0.00%                |
+|     #MACROs               |          686                |
+|     #insts in MACRO       |         2502                |
+-----------------------------------------------------------
+| kept_net                  |                             |
+|     #syn_keep             |            0                |
+|     #keep_hier            |            0                |
+|     #dont_touch           |            0                |
+|     #mark_debug           |            0                |
+|     #max_fanout_keep      |            0                |
+|     #async_reg            |            0                |
+-----------------------------------------------------------
+| Top 10% datanet fanout#   |       108.61                |
+| dff(single fanout)->dff   |          473                |
+| dff(single fanout)->dram  |            0                |
+-----------------------------------------------------------
+| Over-quota path num*      |                             |
+|     Total                 |            0                |
+-----------------------------------------------------------
+| Rent**                    |                             |
+-----------------------------------------------------------
+Note*: Over-quota path shows the over-path-level-threshold path number of each clock.
+       The clock will not be shown if no path is with path level over the threshold.
+       The threshold is defined as worst path_margin / 800ps.
+Note**: Rent shows the rent exponent value of the modules whose rent value exceeds the threshold.
+        Only modules under top are reported, and the threshold is defined as 0.7.
+
+Logic Level Distribution
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Clock        |  Period            |  0     |  1     |  2    |  3    |  4    |  5    |  6    |  7   |  8   |  9   |  10   |  11  |  12  |  13  |  14  |  15  |  16
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  DeriveClock  |  20.000ns (50MHz)  |  1739  |  2357  |  225  |  326  |  248  |  242  |  150  |  76  |  20  |  11  |  454  |  2   |  1   |  2   |  15  |  44  |  1
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Note: The table count the worst 100000 paths, each endpoint count only one time.(5913 paths analyzed)
+
+Hierarchical Rent Exponent Report
++-------------------------------------------------------------------------+
+|Inst         |Model               |Rent     |Cell     |Pin     |Term     |
++-------------------------------------------------------------------------+
+|top          |hdmi_top            |0.16     |8329     |54753   |28       |
+|  u_osd      |ab_osd_overlay_4    |0.42     |2343     |10642   |120      |
+|  u3_hdmi_tx |abc_hdmi_audio_tx_1 |0.39     |5367     |41716   |224      |
++-------------------------------------------------------------------------+
+Note: Cell represents total number of cells inside module; Pin represents total number of pins
+      which have net connection inside module; Term represents total number of PIs and POs of module.
+      Rent represents the relationship between number of terms and number of cells in module.
+      A module with higher rent corresponds to highly connected logic and strong connectivity with others.
+Report gate stage QoR done.
+
+SYN-1001 : End Stage 2 | Optimize Gate; Time: 4.922845s wall, 4.125000s user + 0.687500s system = 4.812500s CPU (97.8%); Memory(MB): used = 305, reserved = 287, peak = 305;
+
+RUN-1003 : finish command "optimize_gate -macrosim ../hdmi_macro.v -mapsim ../hdmi_map.v" in  4.930263s wall, 4.140625s user + 0.687500s system = 4.828125s CPU (97.9%)
+
+RUN-1004 : used memory is 305 MB, reserved memory is 287 MB, peak memory is 305 MB
+VIDEO_EXPORT_PASS

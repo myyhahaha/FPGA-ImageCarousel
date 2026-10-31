@@ -35,7 +35,7 @@ module ab_osd_clock #(parameter CLK_HZ=40000000,SCROLL_STEP_Q2=2)(
    end else subsecond<=subsecond+1'b1;
    if(frame_blank)begin
     frame_bcd<=elapsed_bcd;
-    if(scroll_q2+SCROLL_STEP_Q2>=1168)scroll_q2<=scroll_q2+SCROLL_STEP_Q2-1168;
+    if(scroll_q2+SCROLL_STEP_Q2>=1728)scroll_q2<=scroll_q2+SCROLL_STEP_Q2-1728;
     else scroll_q2<=scroll_q2+SCROLL_STEP_Q2;
    end
   end
@@ -90,10 +90,13 @@ module ab_osd_engine(
    5:bits={5'b10001,5'b10001,5'b10001,5'b10001,5'b10001,5'b10001,5'b01110}; // U
    6:bits={5'b10001,5'b11001,5'b11001,5'b10101,5'b10011,5'b10011,5'b10001}; // N
    7:bits={5'b11111,5'b00100,5'b00100,5'b00100,5'b00100,5'b00100,5'b11111}; // I
+   8:bits={5'b10000,5'b10000,5'b10000,5'b10000,5'b10000,5'b10000,5'b11111}; // L
    default:bits=0;
   endcase
   caption_bit=bits[34-row*5-col];
  end endfunction
+ function[3:0]left_letter;input integer slot;
+ begin case(slot)0:left_letter=0;1:left_letter=7;2:left_letter=0;3:left_letter=8;default:left_letter=1;endcase end endfunction
  function[3:0]right_letter;input integer slot;
  begin case(slot)0:right_letter=4;1:right_letter=5;2:right_letter=6;3:right_letter=15;
  4:right_letter=0;5:right_letter=7;6:right_letter=3;default:right_letter=1;endcase end endfunction
@@ -101,8 +104,8 @@ module ab_osd_engine(
  begin case(slot)
  0:time_glyph=value[27:24];1:time_glyph=value[23:20];2:time_glyph=value[19:16];3:time_glyph=10;
  4:time_glyph=value[15:12];5:time_glyph=value[11:8];6:time_glyph=10;7:time_glyph=value[7:4];default:time_glyph=value[3:0];endcase end endfunction
- reg[7:0]zh_address,digit_address;
- wire[95:0]zh_row;wire[47:0]digit_row;
+ reg[8:0]zh_address;reg[7:0]digit_address;
+ wire[99:0]zh_row;wire[47:0]digit_row;
  ab_osd_font_zh u_zh(.clk(clk),.address(zh_address),.row(zh_row));
  ab_osd_font_digits u_digits(.clk(clk),.address(digit_address),.row(digit_row));
  integer x,y,ty,source_a,source_b,i,chosen_address,fade_distance;
@@ -134,24 +137,26 @@ module ab_osd_engine(
    if(y<60)begin
    if(ty>=551 && ty<558)begin
     ink_color=24'h8f999e;kind=3;
-    for(i=0;i<4;i=i+1)if(x>=100+i*6 && x<105+i*6)
-     if(caption_bit(i,ty-551,x-100-i*6))simple_alpha=10;
+    for(i=0;i<5;i=i+1)if(x>=100+i*6 && x<105+i*6)
+     if(caption_bit(left_letter(i),ty-551,x-100-i*6))simple_alpha=10;
     for(i=0;i<8;i=i+1)if(x>=552+i*6 && x<557+i*6)
      if(caption_bit(right_letter(i),ty-551,x-552-i*6))simple_alpha=10;
    end
    if(x>=100 && x<496 && ty>=563 && ty<587)begin
     kind=1;source_a=x-100+scroll_q2[10:2];
-    if(source_a>=584)source_a=source_a-584;else if(source_a>=292)source_a=source_a-292;
-    source_b=source_a==291 ? 0:source_a+1;
-    for(i=0;i<7;i=i+1)begin
-     if(source_b>=i*28 && source_b<i*28+24)begin vb=1;col_b=source_b-i*28;chosen_address=i*24+ty-563;end
-    end
-    for(i=0;i<7;i=i+1)begin
-     if(source_a>=i*28 && source_a<i*28+24)begin va=1;col_a=source_a-i*28;chosen_address=i*24+ty-563;end
+    if(source_a>=432)source_a=source_a-432;
+    // Each 25-pixel ROM row holds 24 pixels plus the first pixel of
+    // the next tile, preserving smooth fractional scrolling at seams.
+    for(i=0;i<18;i=i+1)begin
+     if(source_a>=i*24 && source_a<i*24+24)begin
+      va=1;vb=1;col_a=source_a-i*24;col_b=source_a-i*24+1;
+      chosen_address=i*24+ty-563;
+     end
     end
     zh_address=chosen_address;
-    dot_a=source_a>=242 && source_a<=246 && ty>=573 && ty<=577 && !((source_a==242 || source_a==246)&&(ty==573 || ty==577));
-    dot_b=source_b>=242 && source_b<=246 && ty>=573 && ty<=577 && !((source_b==242 || source_b==246)&&(ty==573 || ty==577));
+    source_b=source_a==431 ? 0:source_a+1;
+    dot_a=source_a>=390 && source_a<=394 && ty>=573 && ty<=577 && !((source_a==390 || source_a==394)&&(ty==573 || ty==577));
+    dot_b=source_b>=390 && source_b<=394 && ty>=573 && ty<=577 && !((source_b==390 || source_b==394)&&(ty==573 || ty==577));
     if(dot_a || dot_b)ink_color=24'ha8b6af;
     fade_distance=x-100;if(495-x<fade_distance)fade_distance=495-x;
     fade_factor=fade_distance>=16 ? 16:fade_distance;
